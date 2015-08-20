@@ -8,7 +8,7 @@ Using base16 as a starting point, Oceanic-Next.vim is neovim them inspired by [O
 If you are using this for JavaScript, it's suggested that you use the follow syntax libraries.
 
  [vim-javascript](https://github.com/pangloss/vim-javascript)
- 
+
  [vim-jsx](https://github.com/mxw/vim-jsx)
 
  Using whatever plugin manager you choose.
@@ -43,3 +43,10 @@ If you are using this for JavaScript, it's suggested that you use the follow syn
 
 ![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-light.vim.png)
 
+
+## TODOs
+
+These more less todos but some ideas.
+I'd like to add support for regular Vim, the colors just need to be tweaked for 256 colors only. All the logic is there, just need to do the work.
+
+This is perfect place to start for people who have never contributed to open source before.

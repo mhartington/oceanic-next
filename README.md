@@ -8,6 +8,7 @@ Using base16 as a starting point, Oceanic-Next.vim is neovim them inspired by [O
 If you are using this for JavaScript, it's suggested that you use the follow syntax libraries.
 
  [vim-javascript](https://github.com/pangloss/vim-javascript)
+ 
  [vim-jsx](https://github.com/mxw/vim-jsx)
 
  Using whatever plugin manager you choose.
@@ -38,5 +39,7 @@ If you are using this for JavaScript, it's suggested that you use the follow syn
 
 ## Screenshot
 
-![]()
+![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-dark.vim.png)
+
+![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-light.vim.png)
 

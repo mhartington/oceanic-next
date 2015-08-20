@@ -46,7 +46,6 @@ If you are using this for JavaScript, it's suggested that you use the follow syn
 
 ## TODOs
 
-These more less todos but some ideas.
 I'd like to add support for regular Vim, the colors just need to be tweaked for 256 colors only. All the logic is there, just need to do the work.
 
 This is perfect place to start for people who have never contributed to open source before.

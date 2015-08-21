@@ -1,10 +1,10 @@
 # Oceanic-Next.vim
 
 
-Using base16 as a starting point, Oceanic-Next.vim is neovim them inspired by [Oceanic Next for Sublime](https://github.com/voronianski/oceanic-next-color-scheme). It is not a direct port, but uses some colors from the sublime theme, that are fitted to work with neovim.
+Using base16 as a starting point, Oceanic-Next.vim is a neovim theme inspired by [Oceanic Next for Sublime](https://github.com/voronianski/oceanic-next-color-scheme). It is not a direct port, but uses some colors from the sublime theme, that are fitted to work with neovim.
 
 
-If you are using this for JavaScript, it's suggested that you use the follow syntax libraries.
+If you are using this for JavaScript, it's suggested that you use the following syntax libraries.
 
  [vim-javascript](https://github.com/pangloss/vim-javascript)
 
@@ -16,7 +16,7 @@ If you are using this for JavaScript, it's suggested that you use the follow syn
 
 ### Vundle/NeoBundle/Vim-Plug
 
- All major plugin managers for vim are support
+ All major plugin managers for vim are supported
 
  ```vim
 

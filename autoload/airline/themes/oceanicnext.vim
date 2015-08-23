@@ -1,154 +1,52 @@
-if get(g:, 'airline#themes#oceanicnext#constant', 0)
-  let g:airline#themes#oceanicnext#palette = {}
+" Normal mode
+let s:N1 = [ '#ffffff' , '#5f00af' , 15 , 55  ]
+let s:N2 = [ '#ffffff' , '#875fd7' , 15 , 98  ]
+let s:N3 = [ '#ffffff' , '#121212' , 15 , 233 ]
 
-  " Color palette
-  let s:gui_dark_gray = '#202020'
-  let s:cterm_dark_gray = 234
+" Insert mode
+let s:I1 = [ '#ffffff' , '#005fff' , 15 , 33  ]
+let s:I2 = [ '#ffffff' , '#00afff' , 15 , 39  ]
+let s:I3 = [ '#ffffff' , '#121212' , 15 , 233 ]
 
-  let s:gui_med_gray_hi = '#303030'
-  let s:cterm_med_gray_hi = 236
+" Visual mode
+let s:V1 = [ '#121212' , '#ff5f00' , 233 , 202 ]
+let s:V2 = [ '#121212' , '#ffaf00' , 233 , 214 ]
+let s:V3 = [ '#ffffff' , '#121212' , 15  , 233 ]
 
-  let s:gui_med_gray_lo = '#3a3a3a'
-  let s:cterm_med_gray_lo = 237
+" Replace mode
+let s:R1 = [ '#ffffff' , '#ff0000' , 15 , 196 ]
+let s:R2 = [ '#ffffff' , '#ff5f5f' , 15 , 203 ]
+let s:R3 = [ '#ffffff' , '#121212' , 15 , 233 ]
 
-  let s:gui_light_gray = '#505050'
-  let s:cterm_light_gray = 239
+let g:airline#themes#airlineish#palette = {}
+let g:airline#themes#airlineish#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+let g:airline#themes#airlineish#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+let g:airline#themes#airlineish#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+let g:airline#themes#airlineish#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 
-  let s:gui_green = '#99cc99'
-  let s:cterm_green = 151
+" Inactive mode
+let s:IN1 = [ '#9e9e9e' , '#626262' , 247 , 241 ]
+let s:IN2 = [ '#ffffff' , '#121212' , 15  , 233 ]
 
-  let s:gui_blue = '#6a9fb5'
-  let s:cterm_blue = 67
+let s:IA = [ s:IN1[1] , s:IN2[1] , s:IN1[3] , s:IN2[3] , '' ]
+let g:airline#themes#airlineish#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 
-  let s:gui_purple = '#aa759f'
-  let s:cterm_purple = 139
-
-  let s:gui_orange = '#d28445'
-  let s:cterm_orange = 173
-
-  let s:gui_red = '#ac4142'
-  let s:cterm_red = 131
-
-  let s:gui_pink = '#d7afd7'
-  let s:cterm_pink = 182
-
-  " Normal mode
-  let s:N1 = [s:gui_dark_gray, s:gui_green, s:cterm_dark_gray, s:cterm_green]
-
-  let s:N2 = [s:gui_light_gray, s:gui_med_gray_lo, s:cterm_light_gray, s:cterm_med_gray_lo]
-
-  let s:N3 = [s:gui_green, s:gui_med_gray_hi, s:cterm_green, s:cterm_med_gray_hi]
-
-  let g:airline#themes#oceanicnext#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
-  let g:airline#themes#oceanicnext#palette.normal_modified = {
-        \ 'airline_c': [s:gui_orange, s:gui_med_gray_hi, s:cterm_orange, s:cterm_med_gray_hi, ''],
-        \ }
-
-  " Insert mode
-  let s:I1 = [s:gui_med_gray_hi, s:gui_blue, s:cterm_med_gray_hi, s:cterm_blue]
-
-  let s:I3 = [s:gui_blue, s:gui_med_gray_hi, s:cterm_blue, s:cterm_med_gray_hi]
-
-  let g:airline#themes#oceanicnext#palette.insert = airline#themes#generate_color_map(s:I1, s:N2, s:I3)
-
-  let g:airline#themes#oceanicnext#palette.insert_modified = copy(g:airline#themes#oceanicnext#palette.normal_modified)
-  let g:airline#themes#oceanicnext#palette.insert_paste = {
-        \ 'airline_a': [s:gui_dark_gray, s:gui_orange, s:cterm_dark_gray, s:cterm_orange, ''],
-        \ }
-
-  " Replace mode
-  let g:airline#themes#oceanicnext#palette.replace = {
-        \ 'airline_a': [s:gui_dark_gray, s:gui_red, s:cterm_dark_gray, s:cterm_red, ''],
-        \ 'airline_c': [s:gui_red, s:gui_med_gray_hi, s:cterm_red, s:cterm_med_gray_hi, ''],
-        \ }
-
-  let g:airline#themes#oceanicnext#palette.replace_modified = copy(g:airline#themes#oceanicnext#palette.insert_modified)
-
-  " Visual mode
-  let s:V1 = [s:gui_dark_gray, s:gui_pink, s:cterm_dark_gray, s:cterm_pink]
-
-  let s:V3 = [s:gui_pink, s:gui_med_gray_hi, s:cterm_pink, s:cterm_med_gray_hi]
-
-  let g:airline#themes#oceanicnext#palette.visual = airline#themes#generate_color_map(s:V1, s:N2, s:V3)
-
-  let g:airline#themes#oceanicnext#palette.visual_modified = copy(g:airline#themes#oceanicnext#palette.insert_modified)
-
-  " Inactive window
-  let s:IA = [s:gui_dark_gray, s:gui_med_gray_hi, s:cterm_dark_gray, s:cterm_med_gray_hi, '']
-  let g:airline#themes#oceanicnext#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
-  let g:airline#themes#oceanicnext#palette.inactive_modified = {
-        \ 'airline_c': [s:gui_orange, '', s:cterm_orange, '', ''],
-        \ }
-else
-  function! airline#themes#oceanicnext#refresh()
-    let g:airline#themes#oceanicnext#palette = {}
-
-    let g:airline#themes#oceanicnext#palette.accents = {
-          \ 'red': airline#themes#get_highlight('Constant'),
-          \ }
-
-    let s:N1 = airline#themes#get_highlight2(['DiffText', 'bg'], ['DiffText', 'fg'], 'bold')
-    let s:N2 = airline#themes#get_highlight2(['Visual', 'fg'], ['Visual', 'bg'])
-    let s:N3 = airline#themes#get_highlight('CursorLine')
-    let g:airline#themes#oceanicnext#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
-
-    let group = airline#themes#get_highlight('vimCommand')
-    let g:airline#themes#oceanicnext#palette.normal_modified = {
-          \ 'statusline': [ group[0], '', group[2], '', '' ]
-          \ }
-
-    let s:I1 = airline#themes#get_highlight2(['DiffText', 'bg'], ['DiffAdded', 'fg'], 'bold')
-    let s:I2 = airline#themes#get_highlight2(['DiffAdded', 'fg'], ['Normal', 'bg'])
-    let s:I3 = s:N3
-    let g:airline#themes#oceanicnext#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
-    let g:airline#themes#oceanicnext#palette.insert_modified = g:airline#themes#oceanicnext#palette.normal_modified
-
-    let s:R1 = airline#themes#get_highlight2(['DiffText', 'bg'], ['WarningMsg', 'fg'], 'bold')
-    let s:R2 = s:N2
-    let s:R3 = s:N3
-    let g:airline#themes#oceanicnext#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
-    let g:airline#themes#oceanicnext#palette.replace_modified = g:airline#themes#oceanicnext#palette.normal_modified
-
-    let s:V1 = airline#themes#get_highlight2(['DiffText', 'bg'], ['Constant', 'fg'], 'bold')
-    let s:V2 = airline#themes#get_highlight2(['Constant', 'fg'], ['Normal', 'bg'])
-    let s:V3 = s:N3
-    let g:airline#themes#oceanicnext#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
-    let g:airline#themes#oceanicnext#palette.visual_modified = g:airline#themes#oceanicnext#palette.normal_modified
-
-    let s:IA = airline#themes#get_highlight2(['NonText', 'fg'], ['CursorLine', 'bg'])
-    let g:airline#themes#oceanicnext#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
-    let g:airline#themes#oceanicnext#palette.inactive_modified = {
-          \ 'airline_c': [ group[0], '', group[2], '', '' ]
-          \ }
-
-    " Warnings
-    let s:WI = airline#themes#get_highlight2(['WarningMsg', 'bg'], ['WarningMsg', 'fg'], 'bold')
-    let g:airline#themes#oceanicnext#palette.normal.airline_warning = [
-         \ s:WI[0], s:WI[1], s:WI[2], s:WI[3]
-         \ ]
-
-    let g:airline#themes#oceanicnext#palette.normal_modified.airline_warning =
-        \ g:airline#themes#oceanicnext#palette.normal.airline_warning
-
-
-    let g:airline#themes#oceanicnext#palette.insert.airline_warning =
-        \ g:airline#themes#oceanicnext#palette.normal.airline_warning
-
-    let g:airline#themes#oceanicnext#palette.insert_modified.airline_warning =
-        \ g:airline#themes#oceanicnext#palette.normal.airline_warning
-
-    let g:airline#themes#oceanicnext#palette.visual.airline_warning =
-        \ g:airline#themes#oceanicnext#palette.normal.airline_warning
-
-    let g:airline#themes#oceanicnext#palette.visual_modified.airline_warning =
-        \ g:airline#themes#oceanicnext#palette.normal.airline_warning
-
-    let g:airline#themes#oceanicnext#palette.replace.airline_warning =
-        \ g:airline#themes#oceanicnext#palette.normal.airline_warning
-
-    let g:airline#themes#oceanicnext#palette.replace_modified.airline_warning =
-        \ g:airline#themes#oceanicnext#palette.normal.airline_warning
-
-  endfunction
-  call airline#themes#oceanicnext#refresh()
+" CtrlP
+if !get(g:, 'loaded_ctrlp', 0)
+  finish
 endif
+
+let s:CP1 =  [ '#ffffff' , '#5f00af' , 15 , 55 ]
+let s:CP2 =  [ '#ffffff' , '#875fd7' , 15 , 98 ]
+let s:CP3 =  [ '#5f00af' , '#ffffff' , 55 , 15 ]
+
+let g:airline#themes#airlineish#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
+
+" Tabline
+let g:airline#themes#airlineish#palette.tabline = {
+      \ 'airline_tab':     [ '#ffffff' , '#5f00af' ,  15 , 55  , '' ],
+      \ 'airline_tabsel':  [ '#ffffff' , '#875fd7' ,  15 , 98  , '' ],
+      \ 'airline_tabtype': [ '#ffffff' , '#875fd7' ,  15 , 98  , '' ],
+      \ 'airline_tabfill': [ '#ffffff' , '#121212' ,  15 , 233 , '' ],
+      \ 'airline_tabmod':  [ '#ffffff' , '#ff5f5f' ,  15 , 33  , '' ]
+      \ }

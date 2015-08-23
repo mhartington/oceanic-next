@@ -18,18 +18,18 @@ let s:R1 = [ '#ffffff' , '#ff0000' , 15 , 196 ]
 let s:R2 = [ '#ffffff' , '#ff5f5f' , 15 , 203 ]
 let s:R3 = [ '#ffffff' , '#121212' , 15 , 233 ]
 
-let g:airline#themes#airlineish#palette = {}
-let g:airline#themes#airlineish#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
-let g:airline#themes#airlineish#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
-let g:airline#themes#airlineish#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
-let g:airline#themes#airlineish#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+let g:airline#themes#oceanicnext#palette = {}
+let g:airline#themes#oceanicnext#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+let g:airline#themes#oceanicnext#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+let g:airline#themes#oceanicnext#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+let g:airline#themes#oceanicnext#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 
 " Inactive mode
 let s:IN1 = [ '#9e9e9e' , '#626262' , 247 , 241 ]
 let s:IN2 = [ '#ffffff' , '#121212' , 15  , 233 ]
 
 let s:IA = [ s:IN1[1] , s:IN2[1] , s:IN1[3] , s:IN2[3] , '' ]
-let g:airline#themes#airlineish#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
+let g:airline#themes#oceanicnext#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 
 " CtrlP
 if !get(g:, 'loaded_ctrlp', 0)
@@ -40,10 +40,10 @@ let s:CP1 =  [ '#ffffff' , '#5f00af' , 15 , 55 ]
 let s:CP2 =  [ '#ffffff' , '#875fd7' , 15 , 98 ]
 let s:CP3 =  [ '#5f00af' , '#ffffff' , 55 , 15 ]
 
-let g:airline#themes#airlineish#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
+let g:airline#themes#oceanicnext#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
 
 " Tabline
-let g:airline#themes#airlineish#palette.tabline = {
+let g:airline#themes#oceanicnext#palette.tabline = {
       \ 'airline_tab':     [ '#ffffff' , '#5f00af' ,  15 , 55  , '' ],
       \ 'airline_tabsel':  [ '#ffffff' , '#875fd7' ,  15 , 98  , '' ],
       \ 'airline_tabtype': [ '#ffffff' , '#875fd7' ,  15 , 98  , '' ],

@@ -16,6 +16,10 @@ let s:gui0D = "6699cc"
 let s:gui0E = "c594c5"
 let s:gui0F = "ab7967"
 
+if &background == "light"
+  let s:gui0A = "C4A41F"
+endif
+
 " Terminal color definitions
 let s:cterm00 = "00"
 let s:cterm03 = "08"

@@ -21,7 +21,7 @@ let s:R3 = [ '#ffffff' , '#121212' , 15 , 233 ]
 let g:airline#themes#oceanicnext#palette = {}
 let g:airline#themes#oceanicnext#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 let g:airline#themes#oceanicnext#palette.normal_modified = {
-        \ 'airline_c': ['#ffffff' , '#6699CC' , 15 , 172, ''],
+        \ 'airline_c': ['#ffffff' , '#F99157' , 15 , 172, ''],
         \ }
 
 let g:airline#themes#oceanicnext#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)

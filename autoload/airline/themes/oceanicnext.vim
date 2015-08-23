@@ -20,9 +20,18 @@ let s:R3 = [ '#ffffff' , '#121212' , 15 , 233 ]
 
 let g:airline#themes#oceanicnext#palette = {}
 let g:airline#themes#oceanicnext#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+let g:airline#themes#oceanicnext#palette.normal_modified = {
+        \ 'airline_c': ['#ffffff' , '#6699CC' , 15 , 172, ''],
+        \ }
+
 let g:airline#themes#oceanicnext#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+let g:airline#themes#oceanicnext#palette.insert_modified = copy(g:airline#themes#oceanicnext#palette.normal_modified)
+
 let g:airline#themes#oceanicnext#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+let g:airline#themes#oceanicnext#palette.visual_modified = copy(g:airline#themes#oceanicnext#palette.insert_modified)
+
 let g:airline#themes#oceanicnext#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+let g:airline#themes#oceanicnext#palette.replace_modified = copy(g:airline#themes#oceanicnext#palette.insert_modified)
 
 " Inactive mode
 let s:IN1 = [ '#9e9e9e' , '#626262' , 247 , 241 ]

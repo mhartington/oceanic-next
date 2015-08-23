@@ -1,6 +1,6 @@
 " Normal mode
-let s:N1 = [ '#ffffff' , '#5f00af' , 15 , 55  ]
-let s:N2 = [ '#ffffff' , '#875fd7' , 15 , 98  ]
+let s:N1 = [ '#ffffff' , '#6699CC' , 15 , 04  ]
+let s:N2 = [ '#ffffff' , '#65737E' , 15 , 08  ]
 let s:N3 = [ '#ffffff' , '#121212' , 15 , 233 ]
 
 " Insert mode
@@ -36,17 +36,17 @@ if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
 
-let s:CP1 =  [ '#ffffff' , '#5f00af' , 15 , 55 ]
-let s:CP2 =  [ '#ffffff' , '#875fd7' , 15 , 98 ]
-let s:CP3 =  [ '#5f00af' , '#ffffff' , 55 , 15 ]
+let s:CP1 =  [ '#ffffff' , '#0087af' , 15 , 31 ]
+let s:CP2 =  [ '#ffffff' , '#6699CC' , 15 , 04 ]
+let s:CP3 =  [ '#5f00af' , '#ffffff' , 232 , 15 ]
 
 let g:airline#themes#oceanicnext#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
 
 " Tabline
 let g:airline#themes#oceanicnext#palette.tabline = {
-      \ 'airline_tab':     [ '#ffffff' , '#5f00af' ,  15 , 55  , '' ],
-      \ 'airline_tabsel':  [ '#ffffff' , '#875fd7' ,  15 , 98  , '' ],
-      \ 'airline_tabtype': [ '#ffffff' , '#875fd7' ,  15 , 98  , '' ],
+      \ 'airline_tab':     [ '#ffffff' , '#6699CC' ,  15 , 04  , '' ],
+      \ 'airline_tabsel':  [ '#ffffff' , '#6699CC' ,  15 , 04  , '' ],
+      \ 'airline_tabtype': [ '#ffffff' , '#6699CC' ,  15 , 04  , '' ],
       \ 'airline_tabfill': [ '#ffffff' , '#121212' ,  15 , 233 , '' ],
       \ 'airline_tabmod':  [ '#ffffff' , '#ff5f5f' ,  15 , 33  , '' ]
       \ }

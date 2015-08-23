@@ -17,7 +17,9 @@ let s:gui0E = "c594c5"
 let s:gui0F = "ab7967"
 
 if &background == "light"
-  let s:gui0A = "C4A41F"
+  let s:gui0A = "CFAD00"
+  let s:gui0B = "70916C"
+  let s:gui0C = "458282"
 endif
 
 " Terminal color definitions
@@ -78,19 +80,19 @@ fun s:gui(color)
   endif
 
   if a:color == s:gui00
-    return s:gui07
-  elseif a:color == s:gui01
     return s:gui06
-  elseif a:color == s:gui02
+  elseif a:color == s:gui01
     return s:gui05
-  elseif a:color == s:gui03
+  elseif a:color == s:gui02
     return s:gui04
-  elseif a:color == s:gui04
+  elseif a:color == s:gui03
     return s:gui03
-  elseif a:color == s:gui05
+  elseif a:color == s:gui04
     return s:gui02
-  elseif a:color == s:gui06
+  elseif a:color == s:gui05
     return s:gui01
+  elseif a:color == s:gui06
+    return s:gui00
   elseif a:color == s:gui07
     return s:gui00
   endif

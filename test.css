@@ -1,0 +1,67 @@
+.color{
+  color: #202020; /* dark-gray */
+  color: #303030; /* med-gray-hi */
+  color: #3a3a3a; /* med-gray-lo */
+  color: #505050; /* light-gray */
+  color: #99cc99; /* green */
+  color: #6a9fb5; /* blue */
+  color: #aa769f; /* purple */
+  color: #d28446; /* orange */
+  color: #ac4142; /* red */
+  color: #d7afdc; /* pink */
+
+}
+
+elm{
+  let s:gui00 = "132838"
+  let s:gui01 = "343d46"
+  let s:gui02 = "4f5b66"
+  let s:gui03 = "65737e"
+  let s:gui04 = "a7adba"
+  let s:gui05 = "c0c5ce"
+  let s:gui06 = "cdd3de"
+  let s:gui07 = "d8dee9"
+  let s:gui08 = "ec5f67"
+  let s:gui09 = "f99157"
+  let s:gui0A = "fac863"
+  let s:gui0B = "99c794"
+  let s:gui0C = "5fb3b3"
+  let s:gui0D = "6699cc"
+  let s:gui0E = "c594c5"
+  let s:gui0F = "ab7967"
+
+
+  let s:cterm00 = "00"
+  let s:cterm01 = "236"
+  let s:cterm02 = "239"
+  let s:cterm03 = "59"
+  let s:cterm04 = "145"
+  let s:cterm05 = "152"
+  let s:cterm06 = "188"
+  let s:cterm07 = "15"
+  let s:cterm08 = "203"
+  let s:cterm09 = "209"
+  let s:cterm0A = "221"
+  let s:cterm0B = "114"
+  let s:cterm0C = "73"
+  let s:cterm0D = "68"
+  let s:cterm0E = "176"
+  let s:cterm0F = "137"
+}
+elm{
+
+
+
+base04: #A7ADBA
+base05: #C0C5CE
+base06: #CDD3DE
+base07: #D8DEE9
+base08: #EC5f67
+base09: #F99157
+base0A: #FAC863
+base0B: #99C794
+base0C: #5FB3B3
+base0D: #6699CC
+base0E: #C594C5
+base0F: #AB7967
+}

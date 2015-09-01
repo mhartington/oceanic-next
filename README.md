@@ -59,6 +59,5 @@ There is an included theme for vim-airline, to use it, just change the airline t
 
 ![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-dark.vim.png)
 
-![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-light.vim.png)
-
+Shown here with [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 

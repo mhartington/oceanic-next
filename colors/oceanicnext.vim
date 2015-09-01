@@ -15,6 +15,8 @@ let s:gui0C = "5fb3b3"
 let s:gui0D = "6699cc"
 let s:gui0E = "c594c5"
 let s:gui0F = "ab7967"
+let s:guiWhite = "#ffffff"
+
 
 if &background == "light"
   let s:gui0A = "CFAD00"
@@ -39,6 +41,7 @@ let s:cterm0C = "73"
 let s:cterm0D = "68"
 let s:cterm0E = "176"
 let s:cterm0F = "137"
+let s:ctermWhite = "15"
 
 let g:terminal_color_0 = "#132838"
 let g:terminal_color_1 = "#343d46"
@@ -159,7 +162,7 @@ call <sid>hi("Underlined",    s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Visual",        "", s:gui02, "", s:cterm02, "")
 call <sid>hi("VisualNOS",     s:gui08, "", s:cterm03, "", "")
 call <sid>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "")
-call <sid>hi("WildMenu",      s:gui00, s:gui0D, s:cterm00, s:cterm0D,  "")
+call <sid>hi("WildMenu",      s:guiWhite, s:gui0D, s:ctermWhite, s:cterm0D,  "")
 call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
 call <sid>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "")

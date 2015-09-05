@@ -1,21 +1,21 @@
 " GUI color definitions
-let s:gui00 = "132838"
-let s:gui01 = "343d46"
-let s:gui02 = "4f5b66"
-let s:gui03 = "65737e"
-let s:gui04 = "a7adba"
-let s:gui05 = "c0c5ce"
-let s:gui06 = "cdd3de"
-let s:gui07 = "d8dee9"
-let s:gui08 = "ec5f67"
-let s:gui09 = "f99157"
-let s:gui0A = "fac863"
-let s:gui0B = "99c794"
-let s:gui0C = "5fb3b3"
-let s:gui0D = "6699cc"
-let s:gui0E = "c594c5"
-let s:gui0F = "ab7967"
-let s:guiWhite = "#ffffff"
+let s:gui00 = '132838'
+let s:gui01 = '343d46'
+let s:gui02 = '4f5b66'
+let s:gui03 = '65737e'
+let s:gui04 = 'a7adba'
+let s:gui05 = 'c0c5ce'
+let s:gui06 = 'cdd3de'
+let s:gui07 = 'd8dee9'
+let s:gui08 = 'ec5f67'
+let s:gui09 = 'f99157'
+let s:gui0A = 'fac863'
+let s:gui0B = '99c794'
+let s:gui0C = '5fb3b3'
+let s:gui0D = '6699cc'
+let s:gui0E = 'c594c5'
+let s:gui0F = 'ab7967'
+let s:guiWhite = 'ffffff'
 
 
 if &background == "light"
@@ -43,24 +43,24 @@ let s:cterm0E = "176"
 let s:cterm0F = "137"
 let s:ctermWhite = "15"
 
-let g:terminal_color_0 = "#132838"
-let g:terminal_color_1 = "#343d46"
-let g:terminal_color_2 = "#4f5b66"
-let g:terminal_color_3 = "#65737e"
-let g:terminal_color_4 = "#a7adba"
-let g:terminal_color_5 = "#c0c5ce"
-let g:terminal_color_6 = "#cdd3de"
-let g:terminal_color_7 = "#d8dee9"
-let g:terminal_color_8 = "#ec5f67"
-let g:terminal_color_9 = "#f99157"
-let g:terminal_color_10 = "#fac863"
-let g:terminal_color_11 = "#99c794"
-let g:terminal_color_12 = "#5fb3b3"
-let g:terminal_color_13 = "#6699cc"
-let g:terminal_color_14 = "#c594c5"
-let g:terminal_color_15 = "#ab7967"
-let g:terminal_color_background="#132838"
-let g:terminal_color_foreground="#d8dee9"
+let g:terminal_color_0='#1b2b34'
+let g:terminal_color_1='#ed5f67'
+let g:terminal_color_2='#9ac895'
+let g:terminal_color_3='#fbc963'
+let g:terminal_color_4='#669acd'
+let g:terminal_color_5='#c695c6'
+let g:terminal_color_6='#5fb4b4'
+let g:terminal_color_7='#c1c6cf'
+let g:terminal_color_8='#65737e'
+let g:terminal_color_9='#fa9257'
+let g:terminal_color_10='#343d46'
+let g:terminal_color_11='#4f5b66'
+let g:terminal_color_12='#a8aebb'
+let g:terminal_color_13='#ced4df'
+let g:terminal_color_14='#ac7967'
+let g:terminal_color_15='#d9dfea'
+let g:terminal_color_background='#1b2b34'
+let g:terminal_color_foreground='#c1c6cf'
 
 " Theme setup
 hi clear

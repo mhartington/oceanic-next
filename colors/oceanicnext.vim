@@ -26,7 +26,7 @@ endif
 
 " Terminal color definitions
 let s:cterm00 = "00"
-let s:cterm01 = "236"
+let s:cterm01 = "238"
 let s:cterm02 = "239"
 let s:cterm03 = "59"
 let s:cterm04 = "145"
@@ -168,7 +168,8 @@ call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
 call <sid>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "")
 call <sid>hi("Normal",        s:gui05, s:gui00, s:cterm05, s:cterm00, "")
-call <sid>hi("LineNr",        s:gui03, s:gui01, s:cterm07, s:cterm01, "")
+call <sid>hi("LineNr",        s:gui03, s:gui01, s:cterm03, s:cterm01, "")
+call <sid>hi("CursorLineNR",  s:guiWhite, "", s:ctermWhite, "", "")
 call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "")
 call <sid>hi("SpecialKey",    s:gui03, "", s:cterm03, "", "")
 call <sid>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none")

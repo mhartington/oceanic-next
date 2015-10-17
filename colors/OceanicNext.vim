@@ -1,5 +1,5 @@
 " GUI color definitions
-let s:gui00 = '132838'
+let s:gui00 = '141e23'
 let s:gui01 = '343d46'
 let s:gui02 = '4f5b66'
 let s:gui03 = '65737e'

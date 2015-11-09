@@ -1,5 +1,5 @@
 " GUI color definitions
-if exists("g:legacy_blue")
+if exists("g:oceanic_next_legacy_blue")
   let s:gui00 = '162838'
 else
   let s:gui00 = '141e23'

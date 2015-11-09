@@ -1,5 +1,9 @@
 " GUI color definitions
-let s:gui00 = '141e23'
+if exists("g:legacy_blue")
+  let s:gui00 = '162838'
+else
+  let s:gui00 = '141e23'
+endif
 let s:gui01 = '343d46'
 let s:gui02 = '4f5b66'
 let s:gui03 = '65737e'

@@ -4,11 +4,10 @@
 Using base16 as a starting point, Oceanic-Next.vim is a neovim theme inspired by [Oceanic Next for Sublime](https://github.com/voronianski/oceanic-next-color-scheme). It is not a direct port, but uses some colors from the sublime theme, that are fitted to work with neovim.
 
 
-If you are using this for JavaScript, it's suggested that you use the following syntax libraries.
+If you are using this for JavaScript, it's suggested that you use the following syntax library
 
- [vim-javascript](https://github.com/pangloss/vim-javascript)
+ [yajs.vim](https://github.com/othree/yajs.vim)
 
- [vim-jsx](https://github.com/mxw/vim-jsx)
 
  Using whatever plugin manager you choose.
 
@@ -57,6 +56,11 @@ There is an included theme for vim-airline, to use it, just change the airline t
 
 ## Screenshot
 
+_neovim_
+![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-dark.nvim.png)
+
+
+_vim_
 ![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-dark.vim.png)
 
 Shown here with [vim-devicons](https://github.com/ryanoasis/vim-devicons)

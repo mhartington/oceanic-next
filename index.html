@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/mhartington/ionic-v2-and-beyond/gh-pages/lib/css/oceanicnext.css">
+  <title>Oceanic Next for Vim</title>
+</head>
+
+<body>
+  <a href="https://github.com/mhartington/oceanic-next" class="github-ribbon">View on Github</a>
+  <div class="container animated fadeIn">
+    <h1 class="center">Oceanic Next for Vim</h1>
+    <p class="center">A vim port of the famous <a href="http://labs.voronianski.com/oceanic-next-color-scheme/" target="_blank">Sublime Text Color Scheme</a> </p>
+    <hr>
+
+    <div>
+      <p>Oceanic-Next.vim is a neovim theme inspired by Oceanic Next for Sublime. It is not a direct port, but uses some colors from the sublime theme, that are fitted to work with neovim.</p>
+      <p>For the best results with Javascript, you the <a href="https://github.com/othree/yajs.vim" target="_blank">yajs.vim</a></p>
+    </div>
+
+    <h2>Installation</h2>
+    <div>
+      <p>Installation is the same for any other plugin. All major plugin managers for vim are supported</p>
+      <pre><code class="vim">
+PACKAGE_MANAGER 'mhartington/oceanic-next'
+      </code></pre>
+
+      <p>then add the follow to your <code>~/.vimrc</code></p>
+      <pre><code class="vim">
+" Theme
+syntax enable
+set t_Co=256
+colorscheme OceanicNext
+set background=dark
+      </code></pre>
+
+
+
+      <p>or your <code>~/.config/nvim/init.vim</code></p>
+      <pre><code class="vim">
+" Theme
+syntax enable
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+colorscheme OceanicNext
+set background=dark
+      </code></pre>
+    </div>
+
+
+    <h2>Gallery</h2>
+
+    <h3>Neovim</h3>
+    <a href="oceanic-next-dark.nvim.png">
+      <img src="oceanic-next-dark.nvim.png" alt="">
+    </a>
+
+    <h3>Vim</h3>
+    <a href="oceanic-next-dark.vim.png">
+      <img src="oceanic-next-dark.vim.png" alt="">
+    </a>
+
+  </div>
+
+
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/languages/vim.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

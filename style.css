@@ -1,0 +1,79 @@
+* {
+  font-family: "HelveticaNeue-Ultra-Light", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 3rem
+}
+
+h3 {
+  font-size: 2rem
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 200ms;
+}
+
+a:hover {
+  border-color: #0072bc;
+}
+
+.github-ribbon,
+.github-ribbon:hover {
+  display: block;
+  font-size: 13px;
+  padding: 8px 50px;
+  position: fixed;
+  top: 35px;
+  right: -45px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+  color: white;
+  background-color: #0074d9;
+}
+
+img {
+  display: block;
+  width: 90%;
+  margin: auto
+}
+
+pre {
+  margin: auto;
+  width: 90%;
+}
+
+pre code.hljs {
+  padding: 15px 25px
+}
+
+.container {
+  max-width: 980px;
+  margin: auto
+}
+
+.center {
+  text-align: center
+}

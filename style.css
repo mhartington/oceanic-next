@@ -4,6 +4,11 @@
   font-size: 16px;
 }
 
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 100;
@@ -71,7 +76,7 @@ pre code.hljs {
 
 .container {
   max-width: 980px;
-  margin: auto
+  margin: auto;
 }
 
 .center {

@@ -55,6 +55,9 @@ a:hover {
   z-index: 1;
   color: white;
   background-color: #0074d9;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @media(min-width: 660px) {
@@ -63,7 +66,6 @@ a:hover {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    position: fixed;
     top: 35px;
     right: -45px;
   }

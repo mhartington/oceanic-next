@@ -86,6 +86,7 @@ pre code.hljs {
 .container {
   max-width: 980px;
   margin: auto;
+  padding: 10px;
 }
 
 .center {

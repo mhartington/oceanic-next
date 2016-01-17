@@ -24,7 +24,7 @@ h3 {
   font-size: 2rem
 }
 
-p {
+p,a {
   font-size: 1.25rem;
   font-weight: 300
 }

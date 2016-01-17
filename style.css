@@ -4,7 +4,8 @@
   font-size: 16px;
 }
 
-html, body{
+html,
+body {
   padding: 0;
   margin: 0;
 }
@@ -39,24 +40,32 @@ a:hover {
 
 .github-ribbon,
 .github-ribbon:hover {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
   display: block;
-  font-size: 13px;
   padding: 8px 50px;
-  position: fixed;
-  top: 35px;
-  right: -45px;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
   z-index: 1;
   color: white;
   background-color: #0074d9;
+}
+
+@media(min-width: 660px) {
+  .github-ribbon {
+    font-size: 13px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: fixed;
+    top: 35px;
+    right: -45px;
+  }
 }
 
 img {

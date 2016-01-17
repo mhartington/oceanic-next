@@ -24,7 +24,8 @@ h3 {
   font-size: 2rem
 }
 
-p,a {
+p,
+a {
   font-size: 1.25rem;
   font-weight: 300
 }
@@ -67,6 +68,7 @@ a:hover {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     top: 35px;
+    width: auto;
     right: -45px;
   }
 }

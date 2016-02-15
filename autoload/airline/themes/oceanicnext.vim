@@ -38,7 +38,14 @@ let s:ctermWhite = "15"
 " Normal mode
 let s:N1 = [ s:guiWhite , s:gui0D , s:ctermWhite , s:cterm0D  ]
 let s:N2 = [ s:guiWhite , s:gui03 , s:ctermWhite , s:cterm03  ]
-let s:N3 = [ s:guiWhite , s:gui01 , s:ctermWhite , s:cterm01  ]
+
+if &background == "light"
+  let s:N3 = [ s:gui00 , s:gui05 , s:cterm00 , s:cterm05  ]
+endif
+if &background == "dark"
+  let s:N3 = [ s:guiWhite , s:gui01 , s:ctermWhite , s:cterm01  ]
+endif
+
 
 
 " Insert mode

@@ -62,7 +62,8 @@ a:hover {
 }
 
 @media(min-width: 660px) {
-  .github-ribbon {
+  .github-ribbon,
+  .github-ribbon:hover {
     font-size: 13px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);

@@ -1,4 +1,4 @@
-" GUI color definition {{{s
+" GUI color definition {{{
 let s:gui00 = '1b2b34'
 let s:gui01 = '343d46'
 let s:gui02 = '4f5b66'
@@ -18,11 +18,26 @@ let s:gui0F = 'ab7967'
 let s:guiWhite = 'ffffff'
 "}}}
 
-" {{{
+" GUI light {{{
 if &background == "light"
-  let s:gui0A = "9C8201"
-  let s:gui0B = "70916C"
-  let s:gui0C = "458282"
+let s:gui07 = '1b2b34'
+let s:gui06 = '343d46'
+let s:gui05 = '4f5b66'
+let s:gui04 = '65737e'
+let s:gui03 = 'a7adba'
+let s:gui02 = 'c0c5ce'
+let s:gui01 = 'cdd3de'
+let s:gui00 = 'd8dee9'
+
+let s:gui08 = '763034'
+let s:gui09 = '7d492c'
+let s:gui0A = '7d6432'
+let s:gui0B = '4d644a'
+let s:gui0C = '305a5a'
+let s:gui0D = '6699cc'
+let s:gui0E = '634a63'
+let s:gui0F = '563d34'
+let s:guiWhite = '000000'
 endif
 "}}}
 
@@ -46,25 +61,44 @@ let s:cterm0F = "137"
 let s:ctermWhite = "15"
 "}}}
 
-" {{{
-let g:terminal_color_0= s:gui00
-let g:terminal_color_1= s:gui08
-let g:terminal_color_2= s:gui0B
-let g:terminal_color_3= s:gui0A
-let g:terminal_color_4= s:gui0D
-let g:terminal_color_5= s:gui0E
-let g:terminal_color_6= s:gui0C
-let g:terminal_color_7=s:gui05
-let g:terminal_color_8=s:gui03
-let g:terminal_color_9= s:gui09
-let g:terminal_color_10=s:gui01
-let g:terminal_color_11=s:gui02
-let g:terminal_color_12=s:gui04
-let g:terminal_color_13=s:gui06
-let g:terminal_color_14= s:gui0F
-let g:terminal_color_15=s:guiWhite
-let g:terminal_color_background= s:gui00
-let g:terminal_color_foreground=s:gui05
+" Terminal light {{{
+let g:terminal_color_0='#1b2b34'
+let g:terminal_color_1='#ed5f67'
+let g:terminal_color_2='#9ac895'
+let g:terminal_color_3='#fbc963'
+let g:terminal_color_4='#669acd'
+let g:terminal_color_5='#c695c6'
+let g:terminal_color_6='#5fb4b4'
+let g:terminal_color_7='#c1c6cf'
+let g:terminal_color_8='#65737e'
+let g:terminal_color_9='#fa9257'
+let g:terminal_color_10='#343d46'
+let g:terminal_color_11='#4f5b66'
+let g:terminal_color_12='#a8aebb'
+let g:terminal_color_13='#ced4df'
+let g:terminal_color_14='#ac7967'
+let g:terminal_color_15='#d9dfea'
+let g:terminal_color_background='#1b2b34'
+let g:terminal_color_foreground='#c1c6cf'
+
+"}}}
+
+" setup italics {{{
+let s:italic = ""
+if exists('g:oceanic_next_terminal_italic')
+  let s:italic = "italic"
+
+endif
+let g:oceanic_next_terminal_italic = get(g:, 'oceanic_next_terminal_italic', 0)
+"}}}
+
+" setup bold {{{
+let s:bold = ""
+if exists('g:oceanic_next_terminal_bold')
+  let s:bold = "bold"
+
+endif
+let g:oceanic_next_terminal_bold = get(g:, 'oceanic_next_terminal_bold', 0)
 "}}}
 
 " Theme setup
@@ -93,27 +127,27 @@ endfun" }}}
 
 " Return GUI color for light/dark variants {{{
 fun s:gui(color)
-  if &background == "dark"
+  if &background == 'dark'
     return a:color
   endif
 
-  if a:color == s:gui00
-    return s:gui06
-  elseif a:color == s:gui01
-    return s:gui05
-  elseif a:color == s:gui02
-    return s:gui04
-  elseif a:color == s:gui03
-    return s:gui03
-  elseif a:color == s:gui04
-    return s:gui02
-  elseif a:color == s:gui05
-    return s:gui01
-  elseif a:color == s:gui06
-    return s:gui00
-  elseif a:color == s:gui07
-    return s:gui00
-  endif
+  " if a:color == s:gui00
+  "   return s:gui06
+  " elseif a:color == s:gui01
+  "   return s:gui05
+  " elseif a:color == s:gui02
+  "   return s:gui04
+  " elseif a:color == s:gui03
+  "   return s:gui03
+  " elseif a:color == s:gui04
+  "   return s:gui02
+  " elseif a:color == s:gui05
+  "   return s:gui01
+  " elseif a:color == s:gui06
+  "   return s:gui00
+  " elseif a:color == s:gui07
+  "   return s:gui00
+  " endif
 
   return a:color
 endfun
@@ -148,7 +182,7 @@ endfun
 " }}}
 
 " Vim editor colors {{{
-call <sid>hi("Bold",          "", "", "", "", "bold")
+call <sid>hi("Bold",          "", "", "", "", s:bold)
 call <sid>hi("Debug",         s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Directory",     s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("ErrorMsg",      s:gui08, s:gui00, s:cterm08, s:cterm00, "")
@@ -196,7 +230,7 @@ call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none")
 " Standard syntax highlighting {{{
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "")
 call <sid>hi("Character",    s:gui08, "", s:cterm08, "", "")
-call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "italic")
+call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", s:italic)
 call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none")
@@ -286,15 +320,15 @@ call <sid>hi("markdownCode",              s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("markdownError",             s:gui05, s:gui00, s:cterm05, s:cterm00, "")
 call <sid>hi("markdownCodeBlock",         s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("markdownHeadingDelimiter",  s:gui0D, "", s:cterm0D, "", "")
-call <sid>hi("markdownItalic", s:gui0E, "", s:cterm0E, "", "italic")
-call <sid>hi("markdownBold", s:gui0A, "", s:cterm0A, "", "bold")
-call <sid>hi("markdownCodeDelimiter", s:gui0F, "", s:cterm0F, "", "italic")
+call <sid>hi("markdownItalic", s:gui0E, "", s:cterm0E, "", s:italic)
+call <sid>hi("markdownBold", s:gui0A, "", s:cterm0A, "", s:bold)
+call <sid>hi("markdownCodeDelimiter", s:gui0F, "", s:cterm0F, "", s:italic)
  "}}}
 
 " NERDTree highlighting   {{{
 call <sid>hi("NERDTreeDirSlash",  s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("NERDTreeExecFile",  s:gui05, "", s:cterm05, "", "")
-call <sid>hi("NERDTreeOpenable",  s:gui05, "", s:cterm05, "", "bold")
+call <sid>hi("NERDTreeOpenable",  s:gui05, "", s:cterm05, "", s:bold)
 "}}}
 
 " PHP highlighting {{{
@@ -332,6 +366,12 @@ call <sid>hi("SignifySignChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "")
 call <sid>hi("SignifySignDelete",  s:gui08, s:gui01, s:cterm08, s:cterm01, "")
 "}}}
 
+" Neomake highlighting {{{
+call <sid>hi("NeomakeErrorSign",     s:gui08, s:gui01, s:cterm08, s:cterm01, "")
+call <sid>hi("NeomakeWarningSign",  s:gui0A, s:gui01, s:cterm0A, s:cterm01, s:bold)
+call <sid>hi("NeomakeInfoSign",  s:guiWhite, s:gui01, s:ctermWhite, s:cterm01, "")
+"}}}
+
 " Spelling highlighting {{{
 call <sid>hi("SpellBad",     "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellLocal",   "", s:gui00, "", s:cterm00, "undercurl")
@@ -339,6 +379,8 @@ call <sid>hi("SpellCap",     "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellRare",    "", s:gui00, "", s:cterm00, "undercurl")
 "}}}
 hi CursorLineNR guifg=#ffffff
+
+
 " Remove functions
 delf <sid>hi
 delf <sid>gui

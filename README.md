@@ -75,6 +75,10 @@ let g:oceanic_next_terminal_bold = 1
 
 ## Screenshot
 
+Base colors used in the theme.
+
+![](https://raw.githubusercontent.com/voronianski/oceanic-next-theme/master/colors.png)
+
 _neovim_
 ![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-dark.nvim.png)
 

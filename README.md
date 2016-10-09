@@ -27,8 +27,8 @@ For vim, add the following to your `.vimrc`.
  " Theme
  syntax enable
  set t_Co=256
- colorscheme OceanicNext
  set background=dark
+ colorscheme OceanicNext
  ```
 
 For neovim, add the following to your `.nvimrc`.

@@ -17,7 +17,7 @@ let s:base0E = ['#c594c5', 176]
 let s:base0F = ['#ab7967', 137]
 let s:white = ['#ffffff', 15]
 
-let s:p = {'normal': {}, 'insert': {}, 'visual': {}, 'replace': {}, 'inactive': {}}
+let s:p = {'normal': {}, 'insert': {}, 'visual': {}, 'replace': {}, 'inactive': {}, 'tabline': {}}
 let s:p.normal.left = [[s:white, s:base0D, 'bold'], [s:white, s:base03]]
 let s:p.normal.middle = [[s:white, s:base01]]
 let s:p.normal.right = [[s:white, s:base0D], [s:white, s:base0D]]
@@ -33,5 +33,9 @@ let s:p.replace.right = [[s:white, s:base08], [s:white, s:base08]]
 let s:p.inactive.left = [[s:base07, s:base03], [s:base03, s:base01]]
 let s:p.inactive.middle = [[s:base03, s:base01]]
 let s:p.inactive.right = [[s:base03, s:base01], [s:base03, s:base01]]
+let s:p.tabline.left = [[s:base03, s:base01]]
+let s:p.tabline.middle = [[s:base03, s:base01]]
+let s:p.tabline.right = [[s:base03, s:base01]]
+let s:p.tabline.tabsel = [[s:white, s:base03]]
 
 let g:lightline#colorscheme#oceanicnext#palette = lightline#colorscheme#flatten(s:p)

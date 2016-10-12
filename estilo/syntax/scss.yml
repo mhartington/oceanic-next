@@ -1,0 +1,7 @@
+  # SASS highlighting
+sassidChar:                 'base08 . .'
+sassClassChar:              'base09 . .'
+sassInclude:                'base0E . .'
+sassMixing:                 'base0E . .'
+sassMixinName:              'base0D . .'
+

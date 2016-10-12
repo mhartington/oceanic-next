@@ -1,0 +1,8 @@
+# C# highlighting
+csClass:                    'base0A . .'
+csAttribute:                'base0A . .'
+csModifier:                 'base0E . .'
+csType:                     'base08 . .'
+csUnspecifiedStatement:     'base0D . .'
+csContextualStatement:      'base0E . .'
+csNewDecleration:           'base08 . .'

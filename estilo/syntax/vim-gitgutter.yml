@@ -1,0 +1,5 @@
+# GitGutter airblade/vim-gitgutter
+GitGutterAdd:               'base0B base01 .'
+GitGutterChange:            'base0D base01 .'
+GitGutterDelete:            'base08 base01 .'
+GitGutterChangeDelete:      'base0E base01 .'

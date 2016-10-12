@@ -1,0 +1,27 @@
+# Diff highlighting
+DiffAdd:       'base0B base01 .'
+DiffChange:    'base03 base01 .'
+DiffDelete:    'base08 base01 .'
+DiffText:      'base0D base01 .'
+DiffAdded:     'base10 base0B .'
+DiffFile:      'base08 base00 .'
+DiffNewFile:   'base0B base00 .'
+DiffLine:      'base0D base00 .'
+DiffRemoved:   'base10 base08 .'
+
+diffOldFile:   '' # diffFile
+diffNewFile:   '' # diffFile
+diffFile:      '' # Type
+diffOnly:      '' # Constant
+diffIdentical: '' # Constant
+diffDiffer:    '' # Constant
+diffBDiffer:   '' # Constant
+diffIsA:       '' # Constant
+diffNoEOL:     '' # Constant
+diffCommon:    '' # Constant
+diffRemoved:   '' # Special
+diffChanged:   '' # PreProc
+diffAdded:     '' # Identifier
+diffLine:      '' # Statement
+diffSubname:   '' # PreProc
+diffComment:   '' # Comment

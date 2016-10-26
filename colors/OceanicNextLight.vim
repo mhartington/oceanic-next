@@ -4,7 +4,7 @@
 " URL: 
 " Author: Mike Hartington
 " License: Apache
-" Last Change: 2016/10/12 18:59
+" Last Change: 2016/10/26 09:18
 " ===============================================================
 
 let g:colors_name="OceanicNextLight"
@@ -53,6 +53,8 @@ hi CursorLine guibg=#cdd3de ctermbg=252 gui=NONE cterm=NONE
 hi CursorLineNr guifg=#a7adba ctermfg=145 guibg=#cdd3de ctermbg=252
 hi PMenu guifg=#65737e ctermfg=243 guibg=#cdd3de ctermbg=252 gui=NONE cterm=NONE
 hi PMenuSel guifg=#cdd3de ctermfg=252 guibg=#65737e ctermbg=243
+hi PmenuSbar guibg=#c0c5ce ctermbg=251
+hi PmenuThumb guibg=#1b2b34 ctermbg=235
 hi TabLine guifg=#a7adba ctermfg=145 guibg=#cdd3de ctermbg=252 gui=NONE cterm=NONE
 hi TabLineFill guifg=#a7adba ctermfg=145 guibg=#cdd3de ctermbg=252 gui=NONE cterm=NONE
 hi TabLineSel guifg=#869235 ctermfg=101 guibg=#cdd3de ctermbg=252 gui=NONE cterm=NONE

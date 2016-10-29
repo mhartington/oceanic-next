@@ -26,8 +26,12 @@ For vim, add the following to your `.vimrc`.
  ```viml
  " Theme
  syntax enable
+ " for vim 7
  set t_Co=256
- set background=dark
+
+ " for vim 8
+ set termguicolors
+
  colorscheme OceanicNext
  ```
 
@@ -45,7 +49,6 @@ For neovim, add the following to your `.nvimrc`.
  " Theme
  syntax enable
  colorscheme OceanicNext
- set background=dark
 ```
 
 There is an included theme for vim-airline, to use it, just change the airline theme to:

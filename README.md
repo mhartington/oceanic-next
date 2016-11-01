@@ -5,9 +5,9 @@ It is not a direct port, but uses some colors from the sublime theme, that are f
 
 For best results, it is suggested that you use the following syntax plugins.
 
-[yajs.vim](https://github.com/othree/yajs.vim)
-[html5.vim](https://github.com/othree/html5.vim)
-[yats.vim](https://github.com/HerringtonDarkholme/yats.vim/)
+- [yajs.vim](https://github.com/othree/yajs.vim)
+- [html5.vim](https://github.com/othree/html5.vim)
+- [yats.vim](https://github.com/HerringtonDarkholme/yats.vim/)
 
 ## Installation
 

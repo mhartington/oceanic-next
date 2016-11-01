@@ -5,9 +5,9 @@ xmlTag:                  'base0D . .'
 xmlEndTag:               'base0D . .'
 
 
-htmlTag:                 'base05 . .'
+htmlTag:                 'base0C . .'
 htmlEndTag:              'base05 . .'
-htmlArg:                 '' # Type
+htmlArg:                 'base0A' # Type
 htmlTagName:             'base05 . .' # htmlStatement
 htmlSpecialTagName:      '' # Exception
 htmlValue:               '' # String

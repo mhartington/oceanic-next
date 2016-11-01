@@ -4,7 +4,7 @@
 " URL: 
 " Author: Mike Hartington
 " License: Apache
-" Last Change: 2016/10/26 09:18
+" Last Change: 2016/11/01 14:20
 " ===============================================================
 
 let g:colors_name="OceanicNext"
@@ -75,7 +75,7 @@ hi Number guifg=#f99157 ctermfg=209
 hi Operator guifg=#c0c5ce ctermfg=251 gui=NONE cterm=NONE
 hi PreProc guifg=#fac863 ctermfg=221
 hi Repeat guifg=#fac863 ctermfg=221
-hi Special guifg=#5fb3b3 ctermfg=73
+hi Special guifg=#62b3b2 ctermfg=73
 hi SpecialChar guifg=#ab7967 ctermfg=137
 hi Statement guifg=#ec5f67 ctermfg=203
 hi StorageClass guifg=#fac863 ctermfg=221
@@ -96,9 +96,9 @@ hi csType guifg=#ec5f67 ctermfg=203
 hi csUnspecifiedStatement guifg=#6699cc ctermfg=68
 hi csContextualStatement guifg=#c594c5 ctermfg=176
 hi csNewDecleration guifg=#ec5f67 ctermfg=203
-hi cOperator guifg=#5fb3b3 ctermfg=73
+hi cOperator guifg=#62b3b2 ctermfg=73
 hi cPreCondit guifg=#c594c5 ctermfg=176
-hi cssColor guifg=#5fb3b3 ctermfg=73
+hi cssColor guifg=#62b3b2 ctermfg=73
 hi cssBraces guifg=#c0c5ce ctermfg=251
 hi cssClassName guifg=#c594c5 ctermfg=176
 hi DiffAdd guifg=#99c794 ctermfg=114 guibg=#343d46 ctermbg=237
@@ -114,10 +114,11 @@ hi gitCommitOverflow guifg=#ec5f67 ctermfg=203
 hi gitCommitSummary guifg=#99c794 ctermfg=114
 hi htmlBold guifg=#fac863 ctermfg=221
 hi htmlItalic guifg=#c594c5 ctermfg=176
-hi xmlTag guifg=#6699cc ctermfg=68
-hi xmlEndTag guifg=#6699cc ctermfg=68
-hi htmlTag guifg=#c0c5ce ctermfg=251
+hi xmlTag guifg=#62b3b2 ctermfg=73 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi xmlEndTag guifg=#c0c5ce ctermfg=251 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi htmlTag guifg=#62b3b2 ctermfg=73
 hi htmlEndTag guifg=#c0c5ce ctermfg=251
+hi htmlArg guifg=#fac863 ctermfg=221 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi htmlTagName guifg=#c0c5ce ctermfg=251
 hi javaScript guifg=#c0c5ce ctermfg=251
 hi javaScriptNumber guifg=#f99157 ctermfg=209
@@ -148,7 +149,7 @@ hi rubyAttribute guifg=#6699cc ctermfg=68
 hi rubyInterpolation guifg=#99c794 ctermfg=114
 hi rubyInterpolationDelimiter guifg=#ab7967 ctermfg=137
 hi rubyStringDelimiter guifg=#99c794 ctermfg=114
-hi rubyRegexp guifg=#5fb3b3 ctermfg=73
+hi rubyRegexp guifg=#62b3b2 ctermfg=73
 hi sassidChar guifg=#ec5f67 ctermfg=203
 hi sassClassChar guifg=#f99157 ctermfg=209
 hi sassInclude guifg=#c594c5 ctermfg=176
@@ -158,6 +159,7 @@ hi GitGutterAdd guifg=#99c794 ctermfg=114 guibg=#343d46 ctermbg=237
 hi GitGutterChange guifg=#6699cc ctermfg=68 guibg=#343d46 ctermbg=237
 hi GitGutterDelete guifg=#ec5f67 ctermfg=203 guibg=#343d46 ctermbg=237
 hi GitGutterChangeDelete guifg=#c594c5 ctermfg=176 guibg=#343d46 ctermbg=237
+hi xmlTagName guifg=#c0c5ce ctermfg=251 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 
 " ===================================

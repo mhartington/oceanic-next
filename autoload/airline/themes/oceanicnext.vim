@@ -4,7 +4,7 @@
 " URL:
 " Author: Mike Hartington
 " License: Apache
-" Last Change: 2016/10/26 09:18
+" Last Change: 2016/11/01 14:20
 " ============================================================
 
 let g:airline#themes#oceanicnext#palette = {}

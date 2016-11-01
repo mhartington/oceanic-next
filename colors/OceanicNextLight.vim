@@ -4,7 +4,7 @@
 " URL: 
 " Author: Mike Hartington
 " License: Apache
-" Last Change: 2016/10/26 09:18
+" Last Change: 2016/11/01 14:20
 " ===============================================================
 
 let g:colors_name="OceanicNextLight"
@@ -114,10 +114,11 @@ hi gitCommitOverflow guifg=#b40b11 ctermfg=124
 hi gitCommitSummary guifg=#869235 ctermfg=101
 hi htmlBold guifg=#a48c32 ctermfg=137
 hi htmlItalic guifg=#896a98 ctermfg=96
-hi xmlTag guifg=#526f93 ctermfg=60
-hi xmlEndTag guifg=#526f93 ctermfg=60
-hi htmlTag guifg=#4f5b66 ctermfg=240
+hi xmlTag guifg=#5b9c90 ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi xmlEndTag guifg=#4f5b66 ctermfg=240 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi htmlTag guifg=#5b9c90 ctermfg=72
 hi htmlEndTag guifg=#4f5b66 ctermfg=240
+hi htmlArg guifg=#a48c32 ctermfg=137 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi htmlTagName guifg=#4f5b66 ctermfg=240
 hi javaScript guifg=#4f5b66 ctermfg=240
 hi javaScriptNumber guifg=#b4713d ctermfg=131
@@ -158,6 +159,7 @@ hi GitGutterAdd guifg=#869235 ctermfg=101 guibg=#cdd3de ctermbg=252
 hi GitGutterChange guifg=#526f93 ctermfg=60 guibg=#cdd3de ctermbg=252
 hi GitGutterDelete guifg=#b40b11 ctermfg=124 guibg=#cdd3de ctermbg=252
 hi GitGutterChangeDelete guifg=#896a98 ctermfg=96 guibg=#cdd3de ctermbg=252
+hi xmlTagName guifg=#4f5b66 ctermfg=240 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 
 " ===================================

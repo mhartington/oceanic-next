@@ -6,9 +6,9 @@ xmlEndTag:               'base0D . .'
 
 
 htmlTag:                 'base0C . .'
-htmlEndTag:              'base05 . .'
+htmlEndTag:              'base0C . .'
 htmlArg:                 'base0A' # Type
-htmlTagName:             'base05 . .' # htmlStatement
+htmlTagName:             'base07 . .' # htmlStatement
 htmlSpecialTagName:      '' # Exception
 htmlValue:               '' # String
 htmlH1:                  '' # Title

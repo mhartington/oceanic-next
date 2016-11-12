@@ -4,7 +4,7 @@
 " URL:
 " Author: Mike Hartington
 " License: Apache
-" Last Change: 2016/11/03 14:38
+" Last Change: 2016/11/12 18:10
 " ============================================================
 
 let g:airline#themes#oceanicnext#palette = {}
@@ -37,9 +37,9 @@ let g:airline#themes#oceanicnext#palette.inactive = airline#themes#generate_colo
 if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
-let s:CP1 = [ "", "", ,  ]
-let s:CP2 = [ "", "", ,  ]
-let s:CP3 = [ "", "", ,  ]
+let s:CP1 = [ "#ffffff", "#343d46", 15, 237 ]
+let s:CP2 = [ "#ffffff", "#65737e", 15, 243 ]
+let s:CP3 = [ "#ffffff", "#6699cc", 15, 68 ]
 
 let g:airline#themes#oceanicnext#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
 

@@ -4,7 +4,7 @@
 " URL: 
 " Author: Mike Hartington
 " License: Apache
-" Last Change: 2016/11/28 09:14
+" Last Change: 2016/11/28 20:40
 " ===============================================================
 
 set background=light
@@ -22,7 +22,7 @@ hi Exception guifg=#b40b11 ctermfg=124
 hi FoldColumn guibg=#cdd3de ctermbg=252
 hi Folded guifg=#a7adba ctermfg=145 guibg=#cdd3de ctermbg=252
 hi IncSearch guifg=#cdd3de ctermfg=252 guibg=#b4713d ctermbg=131
-hi Italic gui=italic cterm=italic
+hi Italic gui=underline cterm=underline
 hi Macro guifg=#b40b11 ctermfg=124
 hi MatchParen guifg=#4f5b66 ctermfg=240 guibg=#a7adba ctermbg=145
 hi ModeMsg guifg=#869235 ctermfg=101
@@ -60,7 +60,7 @@ hi TabLineFill guifg=#a7adba ctermfg=145 guibg=#cdd3de ctermbg=252 gui=NONE cter
 hi TabLineSel guifg=#869235 ctermfg=101 guibg=#cdd3de ctermbg=252 gui=NONE cterm=NONE
 hi Boolean guifg=#b4713d ctermfg=131
 hi Character guifg=#b40b11 ctermfg=124
-hi Comment guifg=#a7adba ctermfg=145 gui=italic cterm=italic
+hi Comment guifg=#a7adba ctermfg=145 gui=NONE cterm=NONE
 hi Conditional guifg=#896a98 ctermfg=96
 hi Constant guifg=#b4713d ctermfg=131
 hi Define guifg=#896a98 ctermfg=96 gui=NONE cterm=NONE
@@ -131,13 +131,13 @@ hi markdownBold guifg=#a48c32 ctermfg=137 gui=bold cterm=bold
 hi markdownCodeDelimiter guifg=#9a806d ctermfg=101 gui=italic cterm=italic
 hi markdownError guifg=#4f5b66 ctermfg=240 guibg=#d8dee9 ctermbg=253
 hi NeomakeErrorSign guifg=#b40b11 ctermfg=124 guibg=#cdd3de ctermbg=252
-hi NeomakeWarningSign guifg=#a48c32 ctermfg=137 guibg=#cdd3de ctermbg=252 gui=bold cterm=bold
+hi NeomakeWarningSign guifg=#a48c32 ctermfg=137 guibg=#cdd3de ctermbg=252
 hi NeomakeInfoSign guifg=#ffffff ctermfg=15 guibg=#cdd3de ctermbg=252
 hi NeomakeError guifg=#b40b11 ctermfg=124 gui=undercurl cterm=undercurl
 hi NeomakeWarning guifg=#b40b11 ctermfg=124 gui=undercurl cterm=undercurl
 hi NERDTreeExecFile guifg=#4f5b66 ctermfg=240
 hi NERDTreeDirSlash guifg=#526f93 ctermfg=60
-hi NERDTreeOpenable guifg=#4f5b66 ctermfg=240 gui=bold cterm=bold
+hi NERDTreeOpenable guifg=#4f5b66 ctermfg=240
 hi phpComparison guifg=#4f5b66 ctermfg=240
 hi phpParent guifg=#4f5b66 ctermfg=240
 hi phpMemberSelector guifg=#4f5b66 ctermfg=240

@@ -62,17 +62,11 @@ If anyone would like to contribute, I'd be happy to accept a Pull Request.
 
 ## Configuration
 
-You can enable italics and bold folds if your terminal supports it. Some terminals support it out of the box, while others need some work. Give [this article](http://bruinsslot.jp/2016/05/29/how-to-enable-true-color-for-neovim-tmux-and-gnome-terminal/) a read if you would like to enable it for both gnome and iTerm.
+**NOTE: 11-28-2016**
+Italics and Bold has been removed as the theme is generated via Estilo.
+I will work with the estilo dev in order to enable this again.
 
-To enable them, add these lines:
 
-```vim
-" enable italics, disabled by default
-let g:oceanic_next_terminal_italic = 1
-
-" enable bold, disabled by default
-let g:oceanic_next_terminal_bold = 1
-```
 
 ## Screenshot
 

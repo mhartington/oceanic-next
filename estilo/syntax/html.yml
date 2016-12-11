@@ -1,9 +1,6 @@
   # HTML highlighting
 htmlBold:                'base0A . .'
 htmlItalic:              'base0E . .'
-xmlTag:                  'base0D . .'
-xmlEndTag:               'base0D . .'
-
 
 htmlTag:                 'base0C . .'
 htmlEndTag:              'base0C . .'

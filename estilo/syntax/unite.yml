@@ -20,3 +20,10 @@ uniteStatusSourceNames: '' # PreProc
 uniteStatusSourceCandidates: '' # Constant
 uniteStatusMessage: '' # Comment
 uniteStatusLineNR: '' # LineNR
+
+
+#vimfiler
+vimfilerLeaf: 'base05 . .'
+vimfilerNormalFile: 'base05 base00 .'
+vimfilerOpenedFile: 'base0D . .'
+vimfilerClosedFile: 'base0D . .'

@@ -21,7 +21,7 @@ NERDTreeDir:             '' # Directory
 NERDTreeUp:              '' # Directory
 NERDTreeFile:            '' # Normal
 NERDTreeCWD:             '' # Statement
-NERDTreeOpenable:        'base05 . .'
+NERDTreeOpenable:        'base0D . .'
 NERDTreeClosable:        '' # Title
 NERDTreeIgnore:          '' # ignore
 NERDTreeRO:              '' # WarningMsg

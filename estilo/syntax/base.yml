@@ -45,7 +45,8 @@ PmenuThumb:                 '. base07 .'
 TabLine:                    'base03 base01 '
 TabLineFill:                'base03 base01 '
 TabLineSel:                 'base0B base01 '
-
+helpExample:                'base0A . .'
+helpCommand:                'base0A . .'
 
   # Standard syntax highlighting
 Boolean:                    'base09 . .'

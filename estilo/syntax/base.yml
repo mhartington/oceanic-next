@@ -1,5 +1,24 @@
 # fg bg b/u/r/i/c
 # Vim editor colors
+
+Base00:   'base00'
+Base01:   'base01'
+Base02:   'base02'
+Base03:   'base03'
+Base04:   'base04'
+Base05:   'base05'
+Base06:   'base06'
+Base07:   'base07'
+Base08:   'base08'
+Base09:   'base09'
+Base0A:   'base0A'
+Base0B:   'base0B'
+Base0C:   'base0C'
+Base0D:   'base0D'
+Base0E:   'base0E'
+Base0F:   'base0F'
+Base10:   'base10'
+
 Bold:                       '. . b'
 Debug:                      'base08 . .'
 Directory:                  'base0D . .'

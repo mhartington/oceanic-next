@@ -11,21 +11,22 @@
   endif
 let g:colors_name="OceanicNext"
 " }}}
-" {{{ italic
-  let s:italic = ''
-  if exists('g:OceanicNext_italic')
-    let s:italic = 'italic'
-  endif
-let g:OceanicNext_italic = get(g:, 'OceanicNext_italic', 0)
+" setup italics {{{
+ let s:italic = ""
+ if exists('g:oceanic_next_terminal_italic')
+   let s:italic = "italic"
 
-" }}}
-" {{{ Bold Setting
-  let s:bold = ''
-  if exists('g:OceanicNext_bold')
-    let s:bold = 'bold'
-  endif
-  let g:OceanicNext_bold = get(g:, 'OceanicNext_bold', 0)
-" }}}
+ endif
+ let g:oceanic_next_terminal_italic = get(g:, 'oceanic_next_terminal_italic', 0)
+"}}}
+" setup bold {{{
+ let s:bold = ""
+ if exists('g:oceanic_next_terminal_bold')
+   let s:bold = "bold"
+
+ endif
+ let g:oceanic_next_terminal_bold = get(g:, 'oceanic_next_terminal_bold', 0)
+"}}}
 " {{{ Colors
   let s:base00=['#1b2b34', '235']
   let s:base01=['#343d46', '237']
@@ -73,7 +74,7 @@ call <sid>hi('Directory',                  s:base0D, '',       '',          '')
 call <sid>hi('ErrorMsg',                   s:base08, s:base00, '',          '')
 call <sid>hi('Exception',                  s:base08, '',       '',          '')
 call <sid>hi('FoldColumn',                 s:base0D, s:base00, '',          '')
-call <sid>hi('Folded',                     s:base03, s:base00, '',          '')
+call <sid>hi('Folded',                     s:base03, s:base00, s:italic,    '')
 call <sid>hi('IncSearch',                  s:base01, s:base09, '',          '')
 call <sid>hi('Italic',                     '',       '',       s:italic,    '')
 

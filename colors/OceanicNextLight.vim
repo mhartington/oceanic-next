@@ -27,6 +27,45 @@ let g:OceanicNext_italic = get(g:, 'OceanicNext_italic', 0)
   endif
   let g:OceanicNext_bold = get(g:, 'OceanicNext_bold', 0)
 " }}}
+" {{{ Colors
+  let s:base00 =['#d8dee9', '253']
+  let s:base01 =['#cdd3de', '252']
+  let s:base02 =['#c0c5ce', '251']
+  let s:base03 =['#a7adba', '145']
+  let s:base04 =['#65737e', '243']
+  let s:base05 =['#4f5b66', '240']
+  let s:base06 =['#343d46', '237']
+  let s:base07 =['#1b2b34', '235']
+  let s:base08 =['#b40b11', '124']
+  let s:base09 =['#b4713d', '131']
+  let s:base0A =['#a48c32', '137']
+  let s:base0B =['#869235', '101']
+  let s:base0C =['#5b9c90', '72']
+  let s:base0D =['#526f93', '60']
+  let s:base0E =['#896a98', '96']
+  let s:base0F =['#9a806d', '101']
+  let s:base10 =['#ffffff', '15']
+" }}}
+" {{{ Highlight function
+function <sid>hi(group, fg, bg, attr, attrsp)
+  " fg, bg, attr, attrsp
+  if !empty(a:fg)
+    exec "hi " . a:group . " guifg=" .  a:fg[0]
+    exec "hi " . a:group . " ctermfg=" . a:fg[1]
+  endif
+  if !empty(a:bg)
+    exec "hi " . a:group . " guibg=" .  a:bg[0]
+    exec "hi " . a:group . " ctermbg=" . a:bg[1]
+  endif
+  if a:attr != ""
+    exec "hi " . a:group . " gui=" .   a:attr
+    exec "hi " . a:group . " cterm=" . a:attr
+  endif
+  if !empty(a:attrsp)
+    exec "hi " . a:group . " guisp=" . a:attrsp[0]
+  endif
+endfunction
+" }}}
 
 " call s:hi(group, fg, bg, gui, guisp)
 call <sid>hi('Bold',                       '',       '',       'bold',      '')

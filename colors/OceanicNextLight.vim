@@ -47,7 +47,7 @@ let g:OceanicNext_italic = get(g:, 'OceanicNext_italic', 0)
   let s:base10 =['#ffffff', '15']
 " }}}
 " {{{ Highlight function
-function <sid>hi(group, fg, bg, attr, attrsp)
+function! <sid>hi(group, fg, bg, attr, attrsp)
   " fg, bg, attr, attrsp
   if !empty(a:fg)
     exec "hi " . a:group . " guifg=" .  a:fg[0]

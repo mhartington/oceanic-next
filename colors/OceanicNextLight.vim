@@ -12,18 +12,18 @@
   let g:colors_name="OceanicNextLight"
 " }}}
 " {{{ Italics
+  let g:oceanic_next_terminal_italic = get(g:, 'oceanic_next_terminal_italic', 0)
   let s:italic = ""
   if g:oceanic_next_terminal_italic == 1
     let s:italic = "italic"
   endif
-  let g:oceanic_next_terminal_italic = get(g:, 'oceanic_next_terminal_italic', 0)
 " }}}
 " {{{ Bold
+  let g:oceanic_next_terminal_bold = get(g:, 'oceanic_next_terminal_bold', 0)
   let s:bold = ""
   if g:oceanic_next_terminal_bold == 1
    let s:bold = "bold"
   endif
-  let g:oceanic_next_terminal_bold = get(g:, 'oceanic_next_terminal_bold', 0)
 " }}}
 " {{{ Colors
   let s:base00=['#d8dee9', '253']

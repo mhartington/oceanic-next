@@ -9,21 +9,19 @@
   if exists("syntax_on")
     syntax reset
   endif
-let g:colors_name="OceanicNext"
+  let g:colors_name="OceanicNext"
 " }}}
 " {{{ Italics
   let s:italic = ""
-  if exists('g:oceanic_next_terminal_italic')
-   let s:italic = "italic"
-
+  if g:oceanic_next_terminal_italic == 1
+    let s:italic = "italic"
   endif
   let g:oceanic_next_terminal_italic = get(g:, 'oceanic_next_terminal_italic', 0)
 "}}}
 " {{{ Bold
   let s:bold = ""
-  if exists('g:oceanic_next_terminal_bold')
+  if g:oceanic_next_terminal_bold == 1
    let s:bold = "bold"
-
   endif
   let g:oceanic_next_terminal_bold = get(g:, 'oceanic_next_terminal_bold', 0)
 "}}}
@@ -45,7 +43,7 @@ let g:colors_name="OceanicNext"
   let s:base0E=['#c594c5', '176']
   let s:base0F=['#ab7967', '137']
   let s:base10=['#ffffff', '15']
-  let s:none=['none', 'none']
+  let s:none=['NONE', 'NONE']
 " }}}
 " {{{ Highlight function
 function! <sid>hi(group, fg, bg, attr, attrsp)
@@ -249,14 +247,6 @@ call <sid>hi('xmlTag',                     s:base0C, '',       '',          '')
 call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')
 call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
 " }}}
-"
-if exists('g:oceanic_next_highlight_current_line')
-set cursorline
-call <sid>hi('CursorLine',                 '',       s:none, '',          '')
-" call <sid>hi('CursorLineNR',               s:base00, s:base00, '',          '')
-call <sid>hi('CursorLineNr',               s:base10, s:base00, '',          '')
-endif
-let g:oceanic_next_highlight_current_line = get(g:, 'oceanic_next_highlight_current_line', 0)
 
 let g:terminal_color_0=s:base00[0]
 let g:terminal_color_1=s:base08[0]

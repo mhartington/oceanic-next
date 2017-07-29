@@ -3,7 +3,6 @@
 " Author: Mike Hartington
 " ===============================================================
 
-
 " {{{ Setup
   set background=light
   hi clear
@@ -12,39 +11,39 @@
   endif
   let g:colors_name="OceanicNextLight"
 " }}}
-" {{{ italic
-  let s:italic = ''
-  if exists('g:OceanicNext_italic')
-    let s:italic = 'italic'
+" {{{ Italics
+  let s:italic = ""
+  if g:oceanic_next_terminal_italic == 1
+    let s:italic = "italic"
   endif
-let g:OceanicNext_italic = get(g:, 'OceanicNext_italic', 0)
-
+  let g:oceanic_next_terminal_italic = get(g:, 'oceanic_next_terminal_italic', 0)
 " }}}
-" {{{ Bold Setting
-  let s:bold = ''
-  if exists('g:OceanicNext_bold')
-    let s:bold = 'bold'
+" {{{ Bold
+  let s:bold = ""
+  if g:oceanic_next_terminal_bold == 1
+   let s:bold = "bold"
   endif
-  let g:OceanicNext_bold = get(g:, 'OceanicNext_bold', 0)
+  let g:oceanic_next_terminal_bold = get(g:, 'oceanic_next_terminal_bold', 0)
 " }}}
 " {{{ Colors
-  let s:base00 =['#d8dee9', '253']
-  let s:base01 =['#cdd3de', '252']
-  let s:base02 =['#c0c5ce', '251']
-  let s:base03 =['#a7adba', '145']
-  let s:base04 =['#65737e', '243']
-  let s:base05 =['#4f5b66', '240']
-  let s:base06 =['#343d46', '237']
-  let s:base07 =['#1b2b34', '235']
-  let s:base08 =['#b40b11', '124']
-  let s:base09 =['#b4713d', '131']
-  let s:base0A =['#a48c32', '137']
-  let s:base0B =['#869235', '101']
-  let s:base0C =['#5b9c90', '72']
-  let s:base0D =['#526f93', '60']
-  let s:base0E =['#896a98', '96']
-  let s:base0F =['#9a806d', '101']
-  let s:base10 =['#ffffff', '15']
+  let s:base00=['#d8dee9', '253']
+  let s:base01=['#cdd3de', '252']
+  let s:base02=['#c0c5ce', '251']
+  let s:base03=['#a7adba', '145']
+  let s:base04=['#65737e', '243']
+  let s:base05=['#4f5b66', '240']
+  let s:base06=['#343d46', '237']
+  let s:base07=['#1b2b34', '235']
+  let s:base08=['#b40b11', '124']
+  let s:base09=['#b4713d', '131']
+  let s:base0A=['#a48c32', '137']
+  let s:base0B=['#869235', '101']
+  let s:base0C=['#5b9c90', '72']
+  let s:base0D=['#526f93', '60']
+  let s:base0E=['#896a98', '96']
+  let s:base0F=['#9a806d', '101']
+  let s:base10=['#ffffff', '15']
+  let s:none=['NONE', 'NONE']
 " }}}
 " {{{ Highlight function
 function! <sid>hi(group, fg, bg, attr, attrsp)
@@ -66,15 +65,14 @@ function! <sid>hi(group, fg, bg, attr, attrsp)
   endif
 endfunction
 " }}}
-
-" call s:hi(group, fg, bg, gui, guisp)
+" {{{ call <sid>:hi(group, fg, bg, gui, guisp)
 call <sid>hi('Bold',                       '',       '',       'bold',      '')
 call <sid>hi('Debug',                      s:base08, '',       '',          '')
 call <sid>hi('Directory',                  s:base0D, '',       '',          '')
 call <sid>hi('ErrorMsg',                   s:base08, s:base00, '',          '')
 call <sid>hi('Exception',                  s:base08, '',       '',          '')
-call <sid>hi('FoldColumn',                 '',       s:base01, '',          '')
-call <sid>hi('Folded',                     s:base03, s:base01, '',          '')
+call <sid>hi('FoldColumn',                 s:base0D, s:base00, '',          '')
+call <sid>hi('Folded',                     s:base03, s:base01, s:italic,    '')
 call <sid>hi('IncSearch',                  s:base01, s:base09, '',          '')
 call <sid>hi('Italic',                     '',       '',       s:italic,    '')
 
@@ -96,18 +94,18 @@ call <sid>hi('Conceal',                    s:base0D, s:base00, '',          '')
 call <sid>hi('Cursor',                     s:base00, s:base05, '',          '')
 call <sid>hi('NonText',                    s:base03, '',       '',          '')
 call <sid>hi('Normal',                     s:base05, s:base00, '',          '')
-call <sid>hi('LineNr',                     s:base03, s:base01, '',          '')
-call <sid>hi('CursorLineNR',               s:base10, s:base10, '',          '')
-call <sid>hi('SignColumn',                 s:base03, s:base01, '',          '')
-call <sid>hi('StatusLine',                 s:base04, s:base02, '',          '')
+call <sid>hi('LineNr',                     s:base03, s:base00, '',          '')
+call <sid>hi('SignColumn',                 s:base00, s:base00, '',          '')
+call <sid>hi('StatusLine',                 s:base01, s:base03, '',          '')
 call <sid>hi('StatusLineNC',               s:base03, s:base01, '',          '')
-call <sid>hi('VertSplit',                  s:base02, s:base02, '',          '')
+call <sid>hi('VertSplit',                  s:base00, s:base02, '',          '')
 call <sid>hi('ColorColumn',                '',       s:base01, '',          '')
 call <sid>hi('CursorColumn',               '',       s:base01, '',          '')
 call <sid>hi('CursorLine',                 '',       s:base01, '',          '')
+call <sid>hi('CursorLineNR',               s:base00, s:base00, '',          '')
 call <sid>hi('CursorLineNr',               s:base03, s:base01, '',          '')
 call <sid>hi('PMenu',                      s:base04, s:base01, '',          '')
-call <sid>hi('PMenuSel',                   s:base01, s:base04, '',          '')
+call <sid>hi('PMenuSel',                   s:base10, s:base0D, '',          '')
 call <sid>hi('PmenuSbar',                  '',       s:base02, '',          '')
 call <sid>hi('PmenuThumb',                 '',       s:base07, '',          '')
 call <sid>hi('TabLine',                    s:base03, s:base01, '',          '')
@@ -203,6 +201,10 @@ call <sid>hi('NeomakeInfoSign',            s:base10, s:base01, '',          '')
 call <sid>hi('NeomakeError',               s:base08, '',       'undercurl', s:base08)
 call <sid>hi('NeomakeWarning',             s:base08, '',       'undercurl', s:base08)
 
+call <sid>hi('ALEErrorSign',               s:base08, s:base00, s:bold,      '')
+call <sid>hi('ALEWarningSign',             s:base0A, s:base00, s:bold,      '')
+call <sid>hi('ALEInfoSign',                s:base10, s:base00, s:bold,      '')
+
 call <sid>hi('NERDTreeExecFile',           s:base05, '',       '',          '')
 call <sid>hi('NERDTreeDirSlash',           s:base0D, '',       '',          '')
 call <sid>hi('NERDTreeOpenable',           s:base0D, '',       '',          '')
@@ -235,16 +237,16 @@ call <sid>hi('vimfilerNormalFile',         s:base05, s:base00, '',          '')
 call <sid>hi('vimfilerOpenedFile',         s:base0D, '',       '',          '')
 call <sid>hi('vimfilerClosedFile',         s:base0D, '',       '',          '')
 
-call <sid>hi('GitGutterAdd',               s:base0B, s:base01, '',          '')
-call <sid>hi('GitGutterChange',            s:base0D, s:base01, '',          '')
-call <sid>hi('GitGutterDelete',            s:base08, s:base01, '',          '')
-call <sid>hi('GitGutterChangeDelete',      s:base0E, s:base01, '',          '')
+call <sid>hi('GitGutterAdd',               s:base0B, s:base00, s:bold,      '')
+call <sid>hi('GitGutterChange',            s:base0D, s:base00, s:bold,      '')
+call <sid>hi('GitGutterDelete',            s:base08, s:base00, s:bold,      '')
+call <sid>hi('GitGutterChangeDelete',      s:base0E, s:base00, s:bold,      '')
 
 
 call <sid>hi('xmlTag',                     s:base0C, '',       '',          '')
 call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')
 call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
-
+" }}}
 
 let g:terminal_color_0=s:base00[0]
 let g:terminal_color_1=s:base08[0]

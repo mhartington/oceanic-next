@@ -250,13 +250,12 @@ call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')
 call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
 " }}}
 "
-if exists('g:oceanic_next_highlight_current_line')
+if get(g:, 'oceanic_next_highlight_current_line', 0) == 1
 set cursorline
 call <sid>hi('CursorLine',                 '',       s:none, '',          '')
 " call <sid>hi('CursorLineNR',               s:base00, s:base00, '',          '')
 call <sid>hi('CursorLineNr',               s:base10, s:base00, '',          '')
 endif
-let g:oceanic_next_highlight_current_line = get(g:, 'oceanic_next_highlight_current_line', 0)
 
 let g:terminal_color_0=s:base00[0]
 let g:terminal_color_1=s:base08[0]

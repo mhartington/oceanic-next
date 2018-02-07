@@ -251,20 +251,29 @@ call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
 " }}}
 
 let g:terminal_color_0=s:base00[0]
+let g:terminal_color_8=s:base00[0]
+
 let g:terminal_color_1=s:base08[0]
+let g:terminal_color_9=s:base08[0]
+
 let g:terminal_color_2=s:base0B[0]
+let g:terminal_color_10=s:base0B[0]
+
 let g:terminal_color_3=s:base0A[0]
+let g:terminal_color_11=s:base0A[0]
+
 let g:terminal_color_4=s:base0D[0]
-let g:terminal_color_5=s:base0E[0]
-let g:terminal_color_6=s:base0C[0]
-let g:terminal_color_7=s:base05[0]
-let g:terminal_color_8=s:base03[0]
-let g:terminal_color_9=s:base09[0]
-let g:terminal_color_10=s:base01[0]
-let g:terminal_color_11=s:base02[0]
 let g:terminal_color_12=s:base0D[0]
-let g:terminal_color_13=s:base06[0]
-let g:terminal_color_14=s:base0F[0]
-let g:terminal_color_15=s:base07[0]
+
+let g:terminal_color_5=s:base0E[0]
+let g:terminal_color_13=s:base0E[0]
+
+let g:terminal_color_6=s:base0C[0]
+let g:terminal_color_14=s:base0C[0]
+
+let g:terminal_color_7=s:base05[0]
+let g:terminal_color_15=s:base05[0]
+
 let g:terminal_color_background=s:base00[0]
 let g:terminal_color_foreground=s:base10[0]
+

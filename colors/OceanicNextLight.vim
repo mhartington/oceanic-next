@@ -25,6 +25,9 @@
    let s:bold = "bold"
   endif
 " }}}
+" {{{ EndOfBuffer
+  let g:oceanic_next_disable_end_of_buffer = get(g:, 'oceanic_next_disable_end_of_buffer', 0)
+"}}}
 " {{{ Colors
   let s:base00=['#d8dee9', '253']
   let s:base01=['#cdd3de', '252']
@@ -94,7 +97,9 @@ call <sid>hi('Conceal',                    s:base0D, s:base00, '',          '')
 call <sid>hi('Cursor',                     s:base00, s:base05, '',          '')
 call <sid>hi('NonText',                    s:base03, '',       '',          '')
 call <sid>hi('Normal',                     s:base05, s:base00, '',          '')
-call <sid>hi('EndOfBuffer',                s:base05, s:base00, '',          '')
+if g:oceanic_next_disable_end_of_buffer == 0
+  call <sid>hi('EndOfBuffer',                s:base05, s:base00, '',          '')
+endif
 call <sid>hi('LineNr',                     s:base03, s:base00, '',          '')
 call <sid>hi('SignColumn',                 s:base00, s:base00, '',          '')
 call <sid>hi('StatusLine',                 s:base01, s:base03, '',          '')

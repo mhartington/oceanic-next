@@ -244,6 +244,11 @@ call <sid>hi('GitGutterChange',            s:base0D, s:base00, s:bold,      '')
 call <sid>hi('GitGutterDelete',            s:base08, s:base00, s:bold,      '')
 call <sid>hi('GitGutterChangeDelete',      s:base0E, s:base00, s:bold,      '')
 
+call <sid>hi('SignifySignAdd',             s:base0B, s:base00, s:bold,      '')
+call <sid>hi('SignifySignChange',          s:base0D, s:base00, s:bold,      '')
+call <sid>hi('SignifySignDelete',          s:base08, s:base00, s:bold,      '')
+call <sid>hi('SignifySignChangeDelete',    s:base0E, s:base00, s:bold,      '')
+call <sid>hi('SignifySignDeleteFirstLine', s:base08, s:base00, s:bold,      '')
 
 call <sid>hi('xmlTag',                     s:base0C, '',       '',          '')
 call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')

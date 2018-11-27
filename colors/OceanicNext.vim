@@ -43,7 +43,7 @@
   let s:base0E=['#c594c5', '176']
   let s:base0F=['#ab7967', '137']
   let s:base10=['#ffffff', '15']
-  let s:none=['None', 'None']
+  let s:none=['NONE', 'NONE']
 
 " }}}
 " {{{ Highlight function

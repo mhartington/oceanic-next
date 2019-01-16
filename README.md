@@ -35,7 +35,7 @@ For vim, add the following to your `.vimrc`.
 colorscheme OceanicNext
  ```
 
-For neovim, add the following to your `.nvimrc`.
+For neovim, add the following to your `init.vim`.
 
 
 ```viml
@@ -74,6 +74,14 @@ If your terminal and setup supports it, you can enable italics and bold fonts wi
   colorscheme OceanicNext
 ```
 
+Optionally you can enable terminal cursor highlighting.
+This distinguishes between your terminal cursor and your Vim cursor while inside a terminal buffer in normal mode. Neovim only.
+
+To enable, add this before `colorscheme`:
+
+```viml
+  let g:oceanic_next_terminal_cursor_highlight = 1
+```
 
 
 ## Screenshot

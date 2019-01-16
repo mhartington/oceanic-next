@@ -25,6 +25,9 @@
    let s:bold = "bold"
   endif
 "}}}
+" {{{ TermCursor
+  let g:oceanic_next_terminal_cursor_highlight = get(g:, 'oceanic_next_terminal_cursor_highlight', 0)
+" }}}
 " {{{ Colors
   let s:base00=['#1b2b34', '235']
   let s:base01=['#343d46', '237']
@@ -115,6 +118,9 @@ call <sid>hi('TabLineFill',                s:base03, s:base01, '',          '')
 call <sid>hi('TabLineSel',                 s:base0B, s:base01, '',          '')
 call <sid>hi('helpExample',                s:base0A, '',       '',          '')
 call <sid>hi('helpCommand',                s:base0A, '',       '',          '')
+if g:oceanic_next_terminal_cursor_highlight == 1 && has('nvim')
+  call <sid>hi('TermCursorNC',             s:base00, s:base09, '',          '')
+endif
 
 " Standard syntax highlighting
 call <sid>hi('Boolean',                    s:base09, '',       '',          '')

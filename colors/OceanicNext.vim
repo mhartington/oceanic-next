@@ -261,7 +261,7 @@ call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
 " }}}
 
 let g:terminal_color_0=s:base00[0]
-let g:terminal_color_8=s:base00[0]
+let g:terminal_color_8=s:base02[0]
 
 let g:terminal_color_1=s:base08[0]
 let g:terminal_color_9=s:base08[0]

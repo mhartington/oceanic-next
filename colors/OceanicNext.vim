@@ -26,24 +26,24 @@
   endif
 "}}}
 " {{{ Colors
-  let s:base00=['#1b2b34', '235']
-  let s:base01=['#343d46', '237']
-  let s:base02=['#4f5b66', '240']
-  let s:base03=['#65737e', '243']
-  let s:base04=['#a7adba', '145']
-  let s:base05=['#c0c5ce', '251']
-  let s:base06=['#cdd3de', '252']
-  let s:base07=['#d8dee9', '253']
-  let s:base08=['#ec5f67', '203']
-  let s:base09=['#f99157', '209']
-  let s:base0A=['#fac863', '221']
-  let s:base0B=['#99c794', '114']
-  let s:base0C=['#62b3b2', '73']
-  let s:base0D=['#6699cc', '68']
-  let s:base0E=['#c594c5', '176']
-  let s:base0F=['#ab7967', '137']
-  let s:base10=['#ffffff', '15']
-  let s:none=['NONE', 'NONE']
+  let s:base00 = ['#1b2b34', '235']
+  let s:base01 = ['#343d46', '237']
+  let s:base02 = ['#4f5b66', '240']
+  let s:base03 = ['#65737e', '243']
+  let s:base04 = ['#a7adba', '145']
+  let s:base05 = ['#c0c5ce', '251']
+  let s:base06 = ['#cdd3de', '252']
+  let s:base07 = ['#d8dee9', '253']
+  let s:base08 = ['#ec5f67', '203']
+  let s:base09 = ['#f99157', '209']
+  let s:base0A = ['#fac863', '221']
+  let s:base0B = ['#99c794', '114']
+  let s:base0C = ['#62b3b2', '73']
+  let s:base0D = ['#6699cc', '68']
+  let s:base0E = ['#c594c5', '176']
+  let s:base0F = ['#ab7967', '137']
+  let s:base10 = ['#ffffff', '15']
+  let s:none   = ['None',    'None']
 
 " }}}
 " {{{ Highlight function
@@ -67,7 +67,7 @@ function! <sid>hi(group, fg, bg, attr, attrsp)
 endfunction
 " }}}
 " {{{ call <sid>:hi(group, fg, bg, gui, guisp)
-call <sid>hi('Bold',                       '',       '',       'bold',      '')
+call <sid>hi('Bold',                       '',       '',       s:bold,      '')
 call <sid>hi('Debug',                      s:base08, '',       '',          '')
 call <sid>hi('Directory',                  s:base0D, '',       '',          '')
 call <sid>hi('ErrorMsg',                   s:base08, s:base00, '',          '')
@@ -94,7 +94,7 @@ call <sid>hi('Title',                      s:base0D, '',       '',          '')
 call <sid>hi('Conceal',                    s:base0D, s:base00, '',          '')
 call <sid>hi('Cursor',                     s:base00, s:base05, '',          '')
 call <sid>hi('NonText',                    s:base03, '',       '',          '')
-call <sid>hi('Normal',                     s:base05, s:base00, '',          '')
+call <sid>hi('Normal',                     s:base05, s:none,   '',          '')
 call <sid>hi('EndOfBuffer',                s:base05, s:base00, '',          '')
 call <sid>hi('LineNr',                     s:base03, s:base00, '',          '')
 call <sid>hi('SignColumn',                 s:base00, s:base00, '',          '')
@@ -103,7 +103,7 @@ call <sid>hi('StatusLineNC',               s:base03, s:base01, '',          '')
 call <sid>hi('VertSplit',                  s:base00, s:base02, '',          '')
 call <sid>hi('ColorColumn',                '',       s:base01, '',          '')
 call <sid>hi('CursorColumn',               '',       s:base01, '',          '')
-call <sid>hi('CursorLine',                 '',       s:base01, 'NONE',      '')
+call <sid>hi('CursorLine',                 '',       s:base01, 'None',      '')
 call <sid>hi('CursorLineNR',               s:base00, s:base00, '',          '')
 call <sid>hi('CursorLineNr',               s:base03, s:base01, '',          '')
 call <sid>hi('PMenu',                      s:base04, s:base01, '',          '')
@@ -145,10 +145,10 @@ call <sid>hi('Todo',                       s:base0A, s:base01, '',          '')
 call <sid>hi('Type',                       s:base0A, '',       '',          '')
 call <sid>hi('Typedef',                    s:base0A, '',       '',          '')
 
-call <sid>hi('SpellBad',                   '',       '',       'undercurl', '')
-call <sid>hi('SpellLocal',                 '',       '',       'undercurl', '')
-call <sid>hi('SpellCap',                   '',       '',       'undercurl', '')
-call <sid>hi('SpellRare',                  '',       '',       'undercurl', '')
+call <sid>hi('SpellBad',                   '',       '',       'underline', '')
+call <sid>hi('SpellLocal',                 '',       '',       'underline', '')
+call <sid>hi('SpellCap',                   '',       '',       'underline', '')
+call <sid>hi('SpellRare',                  '',       '',       'underline', '')
 
 call <sid>hi('csClass',                    s:base0A, '',       '',          '')
 call <sid>hi('csAttribute',                s:base0A, '',       '',          '')
@@ -165,15 +165,15 @@ call <sid>hi('cssBraces',                  s:base05, '',       '',          '')
 call <sid>hi('cssClassName',               s:base0E, '',       '',          '')
 
 
-call <sid>hi('DiffAdd',                    s:base0B, s:base01, 'bold',      '')
+call <sid>hi('DiffAdd',                    s:base0B, s:base01, s:bold,      '')
 call <sid>hi('DiffChange',                 s:base03, s:base01, '',          '')
 call <sid>hi('DiffDelete',                 s:base08, s:base01, '',          '')
 call <sid>hi('DiffText',                   s:base0D, s:base01, '',          '')
-call <sid>hi('DiffAdded',                  s:base10, s:base0B, 'bold',      '')
+call <sid>hi('DiffAdded',                  s:base10, s:base0B, s:bold,      '')
 call <sid>hi('DiffFile',                   s:base08, s:base00, '',          '')
 call <sid>hi('DiffNewFile',                s:base0B, s:base00, '',          '')
 call <sid>hi('DiffLine',                   s:base0D, s:base00, '',          '')
-call <sid>hi('DiffRemoved',                s:base10, s:base08, 'bold',      '')
+call <sid>hi('DiffRemoved',                s:base10, s:base08, s:bold,      '')
 
 " call <sid>hi('Error',                      s:base08, s:none,   'undercurl',          '')
 " call <sid>hi('NvimInternalError',          s:base08, s:none,   '',          '')
@@ -203,8 +203,8 @@ call <sid>hi('markdownError',              s:base05, s:base00, '',          '')
 call <sid>hi('NeomakeErrorSign',           s:base08, s:base00, '',          '')
 call <sid>hi('NeomakeWarningSign',         s:base0A, s:base00, '',          '')
 call <sid>hi('NeomakeInfoSign',            s:base10, s:base00, '',          '')
-call <sid>hi('NeomakeError',               s:base08, '',       'undercurl', s:base08)
-call <sid>hi('NeomakeWarning',             s:base08, '',       'undercurl', s:base08)
+call <sid>hi('NeomakeError',               s:base08, '',       'underline', s:base08)
+call <sid>hi('NeomakeWarning',             s:base08, '',       'underline', s:base08)
 
 call <sid>hi('ALEErrorSign',               s:base08, s:base00, s:bold,      '')
 call <sid>hi('ALEWarningSign',             s:base0A, s:base00, s:bold,      '')
@@ -256,12 +256,11 @@ call <sid>hi('SignifySignDeleteFirstLine', s:base08, s:base00, s:bold,      '')
 call <sid>hi('xmlTag',                     s:base0C, '',       '',          '')
 call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')
 call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
-
-
+call <sid>hi('Defx_filename_directory',    s:base0D, '',       '',          '')
 " }}}
 
 let g:terminal_color_0=s:base00[0]
-let g:terminal_color_8=s:base00[0]
+let g:terminal_color_8=s:base03[0]
 
 let g:terminal_color_1=s:base08[0]
 let g:terminal_color_9=s:base08[0]

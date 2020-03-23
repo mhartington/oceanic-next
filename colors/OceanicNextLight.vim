@@ -43,7 +43,7 @@
   let s:base0E=['#896a98', '96']
   let s:base0F=['#9a806d', '101']
   let s:base10=['#ffffff', '15']
-  let s:none=['NONE', 'NONE']
+  let s:none=['None','None']
 " }}}
 " {{{ Highlight function
 function! <sid>hi(group, fg, bg, attr, attrsp)
@@ -249,10 +249,11 @@ call <sid>hi('GitGutterChangeDelete',      s:base0E, s:base00, s:bold,      '')
 call <sid>hi('xmlTag',                     s:base0C, '',       '',          '')
 call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')
 call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
+call <sid>hi('Defx_filename_1_directory',  s:base0D, '',       '',          '')
 " }}}
 
 let g:terminal_color_0=s:base00[0]
-let g:terminal_color_8=s:base00[0]
+let g:terminal_color_8=s:base03[0]
 
 let g:terminal_color_1=s:base08[0]
 let g:terminal_color_9=s:base08[0]

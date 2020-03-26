@@ -26,7 +26,7 @@
   endif
 "}}}
 " {{{ Colors
-  let s:base00=['#1b2b34', '235']
+  let s:base00=['#131e24', '235']
   let s:base01=['#343d46', '237']
   let s:base02=['#4f5b66', '240']
   let s:base03=['#65737e', '243']
@@ -186,7 +186,7 @@ call <sid>hi('htmlItalic',                 s:base0E, '',       '',          '')
 call <sid>hi('htmlTag',                    s:base0C, '',       '',          '')
 call <sid>hi('htmlEndTag',                 s:base0C, '',       '',          '')
 call <sid>hi('htmlArg',                    s:base0A, '',       '',          '')
-call <sid>hi('htmlTagName',                s:base07, '',       '',          '')
+call <sid>hi('htmlTagName',                s:base08, '',       '',          '')
 
 call <sid>hi('javaScript',                 s:base05, '',       '',          '')
 call <sid>hi('javaScriptNumber',           s:base09, '',       '',          '')

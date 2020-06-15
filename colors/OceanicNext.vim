@@ -258,6 +258,21 @@ call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')
 call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
 
 
+call <sid>hi('CocErrorSign',               s:base08, '',       '',          '')
+call <sid>hi('CocWarningSign',             s:base0A, '',       '',          '')
+call <sid>hi('CocInfoSign',                s:base0D, '',       '',          '')
+call <sid>hi('CocHintSign',                s:base0C, '',       '',          '')
+call <sid>hi('CocErrorFloat',              s:base08, '',       '',          '')
+call <sid>hi('CocWarningFloat',            s:base0A, '',       '',          '')
+call <sid>hi('CocInfoFloat',               s:base0D, '',       '',          '')
+call <sid>hi('CocHintFloat',               s:base0C, '',       '',          '')
+call <sid>hi('CocDiagnosticsError',        s:base08, '',       '',          '')
+call <sid>hi('CocDiagnosticsWarning',      s:base0A, '',       '',          '')
+call <sid>hi('CocDiagnosticsInfo',         s:base0D, '',       '',          '')
+call <sid>hi('CocDiagnosticsHint',         s:base0C, '',       '',          '')
+
+call <sid>hi('CocSelectedText',            s:base0E, '',       '',          '')
+call <sid>hi('CocCodeLens',                s:base04, '',       '',          '')
 " }}}
 
 let g:terminal_color_0=s:base00[0]

@@ -192,6 +192,9 @@ call <sid>hi('javaScript',                 s:base05, '',       '',          '')
 call <sid>hi('javaScriptNumber',           s:base09, '',       '',          '')
 call <sid>hi('javaScriptBraces',           s:base05, '',       '',          '')
 
+call <sid>hi('jsonKeyword',                s:base0B, '',       '',          '')
+call <sid>hi('jsonQuote',                  s:base0B, '',       '',          '')
+
 call <sid>hi('markdownCode',               s:base0B, '',       '',          '')
 call <sid>hi('markdownCodeBlock',          s:base0B, '',       '',          '')
 call <sid>hi('markdownHeadingDelimiter',   s:base0D, '',       '',          '')

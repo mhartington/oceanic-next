@@ -116,6 +116,8 @@ call <sid>hi('TabLineSel',                 s:base0B, s:base01, '',          '')
 call <sid>hi('helpExample',                s:base0A, '',       '',          '')
 call <sid>hi('helpCommand',                s:base0A, '',       '',          '')
 
+call <sid>hi('BufTabLineCurrent',          s:base08, '',       '',          '')
+
 " Standard syntax highlighting
 call <sid>hi('Boolean',                    s:base09, '',       '',          '')
 call <sid>hi('Character',                  s:base08, '',       '',          '')

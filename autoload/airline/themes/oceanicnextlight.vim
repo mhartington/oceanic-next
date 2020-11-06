@@ -1,5 +1,5 @@
 " ============================================================
-" oceanicnextlightlight
+" oceanicnextlight
 " Author: Mike Hartington
 " ============================================================
 
@@ -21,34 +21,30 @@
   let s:purple = ['#896a98',  '96'] "purple
   let s:brown  = ['#9a806d', '101'] "brown
   let s:white  = ['#ffffff',  '15'] "white
+  let s:none=['None','None']
+
 " }}}
 
-let s:normal1   = [s:base07[0], s:base01[0], s:base07[1], s:base01[1]]
-let s:normal2   = [s:base07[0], s:base01[0], s:base07[1], s:base01[1]]
+let s:normal1   = [s:white[0], s:cyan[0], s:white[1], s:cyan[1]]
+let s:normal2   = [s:base07[0], s:base03[0], s:base07[1], s:base03[1]]
 let s:normal3   = [s:base07[0], s:base01[0], s:base07[1], s:base01[1]]
-
-let s:inactive1 = [s:base03[0], s:base01[0], s:base07[1], s:base03[1]]
-let s:inactive2 = [s:base03[0], s:base01[0], s:base07[1], s:base03[1]]
-let s:inactive3 = [s:base03[0], s:base01[0], s:base07[1], s:base03[1]]
-
-let s:insert1   = [s:green[0],  s:base01[0], s:white[1],  s:base01[1]]
-let s:insert2   = [s:green[0],  s:base01[0], s:base07[1], s:base01[1]]
+let s:inactive1 = [s:base07[0], s:base03[0], s:base07[1], s:base03[1]]
+let s:inactive2 = [s:base07[0], s:base01[0], s:base07[1], s:base01[1]]
+let s:inactive3 = [s:base03[0], s:base01[0], s:base03[1], s:base01[1]]
+let s:insert1   = [s:white[0], s:green[0], s:white[1], s:green[1]]
+let s:insert2   = [s:base07[0], s:base03[0], s:base07[1], s:base03[1]]
 let s:insert3   = [s:base07[0], s:base01[0], s:base07[1], s:base01[1]]
-
-let s:replace1  = [s:red[0],    s:base01[0], s:red[1],    s:base01[1]]
-let s:replace2  = [s:red[0],    s:base01[0], s:red[1],    s:base01[1]]
+let s:replace1  = [s:white[0], s:red[0], s:white[1], s:red[1]]
+let s:replace2  = [s:base07[0], s:base03[0], s:base07[1], s:base03[1]]
 let s:replace3  = [s:base07[0], s:base01[0], s:base07[1], s:base01[1]]
-
-let s:visual1   = [s:orange[0], s:base01[0], s:base07[1], s:orange[1]]
-let s:visual2   = [s:orange[0], s:base01[0], s:base07[1], s:base03[1]]
+let s:visual1   = [s:white[0], s:orange[0], s:white[1], s:orange[1]]
+let s:visual2   = [s:base07[0], s:base03[0], s:base07[1], s:base03[1]]
 let s:visual3   = [s:base07[0], s:base01[0], s:base07[1], s:base01[1]]
-
-let s:ctrlp1    = [s:base07[0], s:base01[0], s:base07[1], s:base01[1]]
-let s:ctrlp2    = [s:base07[0], s:base03[0], s:base07[1], s:base03[1]]
-let s:ctrlp3    = [s:base07[0], s:blue[0],   s:base07[1], s:blue[1]]
-
+let s:ctrlp1    = [s:white[0], s:base01[0], s:white[1], s:base01[1]]
+let s:ctrlp2    = [s:white[0], s:base03[0], s:white[1], s:base03[1]]
+let s:ctrlp3    = [s:white[0], s:blue[0], s:white[1], s:blue[1]]
 let s:warning   = [s:orange[0], s:base01[0], s:orange[1], s:base01[1]]
-let s:error     = [s:red[0],    s:base01[0], s:red[1],    s:base01[1]]
+let s:error     = [s:red[0], s:base01[0], s:red[1], s:base01[1]]
 
 let g:airline#themes#oceanicnextlight#palette = {}
 let g:airline#themes#oceanicnextlight#palette.normal = airline#themes#generate_color_map(s:normal1, s:normal2, s:normal3)
@@ -67,13 +63,6 @@ let g:airline#themes#oceanicnextlight#palette.inactive = airline#themes#generate
 let g:airline#themes#oceanicnextlight#palette.inactive.airline_warning = s:warning
 let g:airline#themes#oceanicnextlight#palette.inactive.airline_error = s:error
 
-let g:airline#themes#oceanicnextlight#palette.tabline = {
-      \ 'airline_tab': [s:base02[0], s:base01[0], s:base02[1], s:base01[1]],
-      \ 'airline_tabsel': [s:base07[0], s:base02[0], s:base07[1], s:base02[1]],
-      \ 'airline_tabhid': [s:base03[0], s:base01[0], s:base03[1], s:base01[1]],
-      \ 'airline_tabmod': [s:cyan[0], s:base02[0], s:cyan[1], s:base02[1]],
-      \ 'airline_tabmod_unsel':[s:cyan[0], s:base01[0], s:cyan[1], s:base01[1]],
-      \}
 if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif

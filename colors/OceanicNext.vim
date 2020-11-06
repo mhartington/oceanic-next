@@ -43,7 +43,7 @@
   let s:purple = ['#c594c5', '176']
   let s:brown  = ['#ab7967', '137']
   let s:white  = ['#ffffff', '15']
-  let s:none   = ['None',    'None']
+  let s:none   = ['NONE',    'NONE']
 
 " }}}
 " {{{ Highlight function

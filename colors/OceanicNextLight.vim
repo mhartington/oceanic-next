@@ -34,16 +34,16 @@
   let s:base05 = ['#4f5b66', '240']
   let s:base06 = ['#343d46', '237']
   let s:base07 = ['#1b2b34', '235']
-  let s:red    = ['#b40b11', '124'] "red
-  let s:orange = ['#b4713d', '131'] "orange
-  let s:yellow = ['#a48c32', '137'] "yellow
-  let s:green  = ['#869235', '101'] "green
-  let s:cyan   = ['#5b9c90',  '72'] "cyan
-  let s:blue   = ['#526f93',  '60'] "blue
-  let s:purple = ['#896a98',  '96'] "purple
-  let s:brown  = ['#9a806d', '101'] "brown
-  let s:white  = ['#ffffff',  '15'] "white
-  let s:none=['None','None']
+  let s:red    = ['#b40b11', '124']
+  let s:orange = ['#b4713d', '131']
+  let s:yellow = ['#a48c32', '137']
+  let s:green  = ['#869235', '101']
+  let s:cyan   = ['#5b9c90',  '72']
+  let s:blue   = ['#526f93',  '60']
+  let s:purple = ['#896a98',  '96']
+  let s:brown  = ['#9a806d', '101']
+  let s:white  = ['#ffffff',  '15']
+  let s:none   = ['NONE',    'NONE']
 
 " }}}
 " {{{ Highlight function

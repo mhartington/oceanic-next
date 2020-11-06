@@ -21,18 +21,17 @@ class SoundCloudAudio extends SoundCloudAudio {
     for (var e in this._events) {
       var fn = this._events[e];
       if (fn) {
-        this.off(e, fn)
+        this.off(e, fn);
       }
     }
   }
 
   preload(streamUrl) {
     this._track = {
-      stream_url: streamUrl
+      stream_url: streamUrl,
     };
     this.audio.src = streamUrl = '?client_id' = +this._clientId;
   }
 }
 
-export default new SoundCloud(config.soundcould.clientId)
-
+export default new SoundCloud(config.soundcould.clientId);

@@ -211,8 +211,8 @@ endfunction
   call s:hi('javaScriptNumber',           s:orange, '',       '',          '')
   call s:hi('javaScriptBraces',           s:base05, '',       '',          '')
 
-  call <sid>hi('jsonKeyword',            s:green, '',       '',          '')
-  call <sid>hi('jsonQuote',              s:green, '',       '',          '')
+  call s:hi('jsonKeyword',            s:green, '',       '',          '')
+  call s:hi('jsonQuote',              s:green, '',       '',          '')
 
   call s:hi('markdownCode',               s:green,  '',       '',          '')
   call s:hi('markdownCodeBlock',          s:green,  '',       '',          '')
@@ -279,6 +279,22 @@ endfunction
   call s:hi('xmlTagName',                 s:base05, '',       '',          '')
   call s:hi('xmlEndTag',                  s:cyan,   '',       '',          '')
   call s:hi('Defx_filename_directory',    s:blue,   '',       '',          '')
+
+  call s:hi('CocErrorSign',               s:red, '',       '',          '')
+  call s:hi('CocWarningSign',             s:yellow, '',       '',          '')
+  call s:hi('CocInfoSign',                s:blue, '',       '',          '')
+  call s:hi('CocHintSign',                s:cyan, '',       '',          '')
+  call s:hi('CocErrorFloat',              s:red, '',       '',          '')
+  call s:hi('CocWarningFloat',            s:yellow, '',       '',          '')
+  call s:hi('CocInfoFloat',               s:blue, '',       '',          '')
+  call s:hi('CocHintFloat',               s:cyan, '',       '',          '')
+  call s:hi('CocDiagnosticsError',        s:red, '',       '',          '')
+  call s:hi('CocDiagnosticsWarning',      s:yellow, '',       '',          '')
+  call s:hi('CocDiagnosticsInfo',         s:blue, '',       '',          '')
+  call s:hi('CocDiagnosticsHint',         s:cyan, '',       '',          '')
+  call s:hi('CocSelectedText',            s:purple, '',       '',          '')
+  call s:hi('CocCodeLens',                s:base04, '',       '',          '')
+
 
 " }}}
 " {{{ Terminal

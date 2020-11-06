@@ -277,31 +277,54 @@ endfunction
   call s:hi('Defx_filename_directory',    s:blue,   '',       '',          '')
 
 " }}}
+" {{{ Terminal
+if has('nvim')
+  let g:terminal_color_0=s:base00[0]
+  let g:terminal_color_8=s:base03[0]
 
-let g:terminal_color_0=s:base00[0]
-let g:terminal_color_8=s:base03[0]
+  let g:terminal_color_1=s:red[0]
+  let g:terminal_color_9=s:red[0]
 
-let g:terminal_color_1=s:red[0]
-let g:terminal_color_9=s:red[0]
+  let g:terminal_color_2=s:green[0]
+  let g:terminal_color_10=s:green[0]
 
-let g:terminal_color_2=s:green[0]
-let g:terminal_color_10=s:green[0]
+  let g:terminal_color_3=s:yellow[0]
+  let g:terminal_color_11=s:yellow[0]
 
-let g:terminal_color_3=s:yellow[0]
-let g:terminal_color_11=s:yellow[0]
+  let g:terminal_color_4=s:blue[0]
+  let g:terminal_color_12=s:blue[0]
 
-let g:terminal_color_4=s:blue[0]
-let g:terminal_color_12=s:blue[0]
+  let g:terminal_color_5=s:purple[0]
+  let g:terminal_color_13=s:purple[0]
 
-let g:terminal_color_5=s:purple[0]
-let g:terminal_color_13=s:purple[0]
+  let g:terminal_color_6=s:cyan[0]
+  let g:terminal_color_14=s:cyan[0]
 
-let g:terminal_color_6=s:cyan[0]
-let g:terminal_color_14=s:cyan[0]
+  let g:terminal_color_7=s:base05[0]
+  let g:terminal_color_15=s:base05[0]
 
-let g:terminal_color_7=s:base05[0]
-let g:terminal_color_15=s:base05[0]
+  let g:terminal_color_background=s:base00[0]
+  let g:terminal_color_foreground=s:white[0]
+else
+  let g:terminal_ansi_colors = [
+     \ s:base00[0],
+     \ s:red[0],
+     \ s:green[0],
+     \ s:yellow[0],
+     \ s:blue[0],
+     \ s:purple[0],
+     \ s:cyan[0],
+     \ s:white[0],
+     \ s:base03[0],
+     \ s:red[0],
+     \ s:green[0],
+     \ s:yellow[0],
+     \ s:blue[0],
+     \ s:purple[0],
+     \ s:cyan[0],
+     \ s:white[0],
+     \]
 
-let g:terminal_color_background=s:base00[0]
-let g:terminal_color_foreground=s:white[0]
+endif
+
 

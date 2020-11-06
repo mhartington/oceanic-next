@@ -165,6 +165,7 @@ endfunction
   call s:hi('TSKeyword', s:purple, '', '' ,'')
   call s:hi('TSVariableBuiltin', s:red, '', '', '')
   call s:hi('TSTag', s:white, '', '', '')
+  call s:hi('TSLabel', s:cyan, '', '', '')
 
   call s:hi('SpellBad',                   '',       '',       'undercurl', '')
   call s:hi('SpellLocal',                 '',       '',       'undercurl', '')
@@ -209,6 +210,9 @@ endfunction
   call s:hi('javaScript',                 s:base05, '',       '',          '')
   call s:hi('javaScriptNumber',           s:orange, '',       '',          '')
   call s:hi('javaScriptBraces',           s:base05, '',       '',          '')
+
+  call <sid>hi('jsonKeyword',            s:green, '',       '',          '')
+  call <sid>hi('jsonQuote',              s:green, '',       '',          '')
 
   call s:hi('markdownCode',               s:green,  '',       '',          '')
   call s:hi('markdownCodeBlock',          s:green,  '',       '',          '')

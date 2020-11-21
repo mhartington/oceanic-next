@@ -94,7 +94,7 @@ endfunction
   call s:hi('Conceal',                    s:blue,   s:base00, '',          '')
   call s:hi('Cursor',                     s:base00, s:base05, '',          '')
   call s:hi('NonText',                    s:base03, '',       '',          '')
-  call s:hi('Normal',                     s:base07,  s:base00, '',          '')
+  call s:hi('Normal',                     s:base05,  s:base00, '',          '')
   call s:hi('EndOfBuffer',                s:base05, s:base00, '',          '')
   call s:hi('LineNr',                     s:base03, s:base00, '',          '')
   call s:hi('SignColumn',                 s:base00, s:base00, '',          '')

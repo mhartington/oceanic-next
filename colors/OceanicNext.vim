@@ -147,6 +147,23 @@ endfunction
   call s:hi('Type',                       s:yellow, '',       '',          '')
   call s:hi('Typedef',                    s:yellow, '',       '',          '')
 
+  " LSP
+  call s:hi('LspDiagnosticsDefaultError',         s:red,    '','','')
+  call s:hi('LspDiagnosticsSignError',            s:red,    '','','')
+  call s:hi('LspDiagnosticsUnderlineError',       s:red,    '','','')
+
+  call s:hi('LspDiagnosticsDefaultWarning',       s:yellow, '','','')
+  call s:hi('LspDiagnosticsSignWarning',          s:yellow, '','','')
+  call s:hi('LspDiagnosticsUnderlineWarning',     s:yellow, '','','')
+
+  call s:hi('LspDiagnosticsDefaultInformation',   s:blue,   '','','')
+  call s:hi('LspDiagnosticsSignInformation',      s:blue,   '','','')
+  call s:hi('LspDiagnosticsUnderlineInformation', s:blue,   '','','')
+
+  call s:hi('LspDiagnosticsDefaultHint',          s:cyan,   '','','')
+  call s:hi('LspDiagnosticsSignHint',             s:cyan,   '','','')
+  call s:hi('LspDiagnosticsUnderlineHint',        s:cyan,   '','','')
+
   " TreeSitter stuff
   call s:hi('TSInclude',                  s:cyan,   '',       '',          '')
   call s:hi('TSPunctBracket',             s:cyan,   '',       '',          '')

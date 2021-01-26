@@ -65,6 +65,14 @@ function! s:hi(group, fg, bg, attr, attrsp)
     exec "hi " . a:group . " guisp=" . a:attrsp[0]
   endif
 endfunction
+
+
+" }}}
+" {{{ Make vim function highlighting behave like other functions
+hi! link vimFunc Function
+hi! link vimFunction Function
+hi! link vimUserFunc Function
+
 " }}}
 " {{{ call s::hi(group, fg, bg, gui, guisp)
   call s:hi('Bold',                               '',       '',       s:bold,      '')

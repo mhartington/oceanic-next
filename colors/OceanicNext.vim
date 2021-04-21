@@ -144,8 +144,8 @@ endfunction
   call s:hi('Structure',                          s:purple, '',       '',          '')
   call s:hi('Tag',                                s:yellow, '',       '',          '')
   call s:hi('Todo',                               s:yellow, s:base01, '',          '')
-  call s:hi('Type',                               s:yellow, '',       '',          '')
-  call s:hi('Typedef',                            s:yellow, '',       '',          '')
+  call s:hi('Type',                               s:purple, '',       s:italic,    '')
+  call s:hi('Typedef',                            s:purple, '',       s:italic,    '')
 
   " LSP
   call s:hi('LspDiagnosticsDefaultError',         '',       '',       '',          '')

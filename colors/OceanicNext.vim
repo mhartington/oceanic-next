@@ -4,7 +4,6 @@
 " ===============================================================
 
 " {{{ Setup
-  set background=dark
   if exists('g:colors_name')
     highlight clear
     if exists('syntax_on')
@@ -368,3 +367,4 @@ else
 
 endif
 
+set background=dark

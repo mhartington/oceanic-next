@@ -5,9 +5,11 @@
 
 " {{{ Setup
   set background=light
-  hi clear
-  if exists("syntax_on")
-    syntax reset
+  if exists('g:colors_name')
+    highlight clear
+    if exists('syntax_on')
+      syntax reset
+    endif
   endif
   let g:colors_name="OceanicNextLight"
 " }}}

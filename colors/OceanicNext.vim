@@ -38,6 +38,7 @@
   let s:orange = ['#f99157', '209']
   let s:yellow = ['#fac863', '221']
   let s:green  = ['#99c794', '114']
+  let s:diff_green  = ['#2e7d25', '114']
   let s:cyan   = ['#62b3b2', '73']
   let s:blue   = ['#6699cc', '68']
   let s:purple = ['#c594c5', '176']
@@ -206,13 +207,13 @@ endfunction
   call s:hi('cssClassName',                       s:purple, '',       '',          '')
 
 
-  call s:hi('DiffAdd',                            s:green,  s:base01, s:bold,      '')
+  call s:hi('DiffAdd',                            s:diff_green,  s:base01, s:bold,      '')
   call s:hi('DiffChange',                         s:base03, s:base01, '',          '')
   call s:hi('DiffDelete',                         s:red,    s:base01, '',          '')
   call s:hi('DiffText',                           s:blue,   s:base01, '',          '')
-  call s:hi('DiffAdded',                          s:base07, s:green,  s:bold,      '')
+  call s:hi('DiffAdded',                          s:base07, s:diff_green,  s:bold,      '')
   call s:hi('DiffFile',                           s:red,    s:base00, '',          '')
-  call s:hi('DiffNewFile',                        s:green,  s:base00, '',          '')
+  call s:hi('DiffNewFile',                        s:diff_green,  s:base00, '',          '')
   call s:hi('DiffLine',                           s:blue,   s:base00, '',          '')
   call s:hi('DiffRemoved',                        s:base07, s:red,    s:bold,      '')
 
@@ -285,7 +286,7 @@ endfunction
   call s:hi('vimfilerOpenedFile',                 s:blue,   '',       '',          '')
   call s:hi('vimfilerClosedFile',                 s:blue,   '',       '',          '')
 
-  call s:hi('GitGutterAdd',                       s:green,  s:base00, s:bold,      '')
+  call s:hi('GitGutterAdd',                       s:diff_green,  s:base00, s:bold,      '')
   call s:hi('GitGutterChange',                    s:blue,   s:base00, s:bold,      '')
   call s:hi('GitGutterDelete',                    s:red,    s:base00, s:bold,      '')
   call s:hi('GitGutterChangeDelete',              s:purple, s:base00, s:bold,      '')

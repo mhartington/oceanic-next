@@ -4,7 +4,6 @@
 " ===============================================================
 
 " {{{ Setup
-  set background=dark
   if exists('g:colors_name')
      highlight clear
      if exists('syntax_on')
@@ -54,3 +53,4 @@ call oceanic_next#highlight(
   \ s:white,
   \ s:none
   \)
+set background=dark

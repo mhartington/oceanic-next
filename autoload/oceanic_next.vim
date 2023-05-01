@@ -1,5 +1,7 @@
+
 let g:oceanic_next_terminal_italic = get(g:, 'oceanic_next_terminal_italic', 0)
 let s:italic = ""
+
 if g:oceanic_next_terminal_italic == 1
   let s:italic = "italic"
 endif
@@ -30,10 +32,7 @@ function! s:hi(group, fg, bg, attr, attrsp)
   endif
 endfunction
 
-function! oceanic_next#highlight(
-      \ base00, base01, base02, base03, base04, base05, base06, base07, 
-      \ red, orange, yellow, green, cyan, blue, purple, brown, white, none
-      \) abort
+function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05, base06, base07, red, orange, yellow, green, cyan, blue, purple, brown, white, none) abort
 
   call s:hi('Bold',                              '',       '',       s:bold,      '')
   call s:hi('Debug',                             a:red,    '',       '',          '')
@@ -133,7 +132,6 @@ function! oceanic_next#highlight(
   call s:hi('cssColor',                          a:cyan,   '',       '',          '')
   call s:hi('cssBraces',                         a:base05, '',       '',          '')
   call s:hi('cssClassName',                      a:purple, '',       '',          '')
-
 
   call s:hi('DiffAdd',                           a:green,  a:base01, s:bold,      '')
   call s:hi('DiffChange',                        a:base03, a:base01, '',          '')
@@ -268,41 +266,43 @@ function! oceanic_next#highlight(
   call s:hi('DiagnosticUnderlineHint',           '',       '',       'undercurl', '')
   call s:hi('DiagnosticFloatingHint',            a:cyan,   '',       '',          '')
 
-	call s:hi( 'LspReferenceText',                 '',       a:base01, '',          '')
-	call s:hi( 'LspReferenceRead',                 '',       a:base01, '',          '')
-	call s:hi( 'LspReferenceWrite',                '',       a:base01, '',          '')
-
-  " TreeSitter stuff
-  call s:hi('@include',                          a:purple, '',       '',          '')
-  call s:hi('@punctuation.bracket',              a:cyan,   '',       '',          '')
-  call s:hi('@punctuation.delimiter',            a:cyan,   '',       '',          '')
-  call s:hi('@punctuation.special',              a:cyan,   '',       '',          '')
-  call s:hi('@parameter',                        a:base07, '',       '',          '')
-  call s:hi('@type',                             a:yellow, '',       '',          '')
-  call s:hi('@function',                         a:blue,   '',       '',          '')
-
-  call s:hi('@tag.delimiter',                    a:cyan,   '',       '',          '')
-  call s:hi('@property',                         a:base07, '',       '',          '')
-  call s:hi('@method',                           a:blue,   '',       '',          '')
-  call s:hi('@parameter',                        a:yellow, '',       '',          '')
-  call s:hi('@constructor',                      a:base07, '',       '',          '')
-  call s:hi('@variable',                         a:base06, '',       '',          '')
-  call s:hi('@operator',                         a:orange, '',       '',          '')
-  call s:hi('@tag',                              a:base07, '',       '',          '')
-  call s:hi('@keyword',                          a:purple, '',       '',          '')
-  call s:hi('@keyword.operator',                 a:purple, '',       '',          '')
-  call s:hi('@variable.builtin',                 a:red,    '',       '',          '')
-  call s:hi('@label',                            a:cyan,   '',       '',          '')
-
-  call s:hi('@conditional',                      a:purple, '',       '',          '')
-  call s:hi('@namespace',                        a:base07, '',       '',          '')
-  call s:hi('@symbol',                           a:green,  '',       '',          '')
-  call s:hi('@exception',                        a:red,    '',       '',          '')
-
+	call s:hi('LspReferenceText',                  '',       a:base01, '',          '')
+	call s:hi('LspReferenceRead',                  '',       a:base01, '',          '')
+	call s:hi('LspReferenceWrite',                 '',       a:base01, '',          '')
   call s:hi('FloatBorder',                       a:base04, '',       '',          '')
   call s:hi('IndentBlanklineChar',               a:base01, '',       'nocombine', '')
   call s:hi('IndentBlanklineSpaceChar',          a:base01, '',       'nocombine', '')
   call s:hi('IndentBlanklineSpaceCharBlankline', a:base01, '',       'nocombine', '')
+
+
+	if has('nvim')
+    " TreeSitter stuff
+    call s:hi('@include',                          a:purple, '',       '',          '')
+    call s:hi('@punctuation.bracket',              a:cyan,   '',       '',          '')
+    call s:hi('@punctuation.delimiter',            a:cyan,   '',       '',          '')
+    call s:hi('@punctuation.special',              a:cyan,   '',       '',          '')
+    call s:hi('@parameter',                        a:base07, '',       '',          '')
+    call s:hi('@type',                             a:yellow, '',       '',          '')
+    call s:hi('@function',                         a:blue,   '',       '',          '')
+
+    call s:hi('@tag.delimiter',                    a:cyan,   '',       '',          '')
+    call s:hi('@property',                         a:base07, '',       '',          '')
+    call s:hi('@method',                           a:blue,   '',       '',          '')
+    call s:hi('@parameter',                        a:yellow, '',       '',          '')
+    call s:hi('@constructor',                      a:base07, '',       '',          '')
+    call s:hi('@variable',                         a:base06, '',       '',          '')
+    call s:hi('@operator',                         a:orange, '',       '',          '')
+    call s:hi('@tag',                              a:base07, '',       '',          '')
+    call s:hi('@keyword',                          a:purple, '',       '',          '')
+    call s:hi('@keyword.operator',                 a:purple, '',       '',          '')
+    call s:hi('@variable.builtin',                 a:red,    '',       '',          '')
+    call s:hi('@label',                            a:cyan,   '',       '',          '')
+
+    call s:hi('@conditional',                      a:purple, '',       '',          '')
+    call s:hi('@namespace',                        a:base07, '',       '',          '')
+    call s:hi('@symbol',                           a:green,  '',       '',          '')
+    call s:hi('@exception',                        a:red,    '',       '',          '')
+  endif
 
 
   if has('nvim')

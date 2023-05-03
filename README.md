@@ -13,30 +13,29 @@ For best results, it is suggested that you use the following syntax plugins.
 
 All major plugin managers for vim/nvim are supported
 
- ```vim
+```viml
 <PACKAGE_MANAGER> 'mhartington/oceanic-next'
- ```
+```
 
 For vim, add the following to your `.vimrc`.
 
 *(On Google Cloud Shell try to `set t_Co=256` instead of `set termguicolors` even though your vim version is 8)*
 
- ```viml
+```viml
 " Theme
-  syntax enable
+syntax enable
 " for vim 7
-  set t_Co=256
+set t_Co=256
 
 " for vim 8
-  if (has("termguicolors"))
-   set termguicolors
-  endif
+if (has("termguicolors"))
+ set termguicolors
+endif
 
 colorscheme OceanicNext
- ```
+```
 
 For neovim, add the following to your `init.vim`.
-
 
 ```viml
 " For Neovim 0.1.3 and 0.1.4
@@ -54,8 +53,8 @@ colorscheme OceanicNext
 
 There is an included theme for vim-airline, to use it, just change the airline theme to:
 
-```
-  let g:airline_theme='oceanicnext'
+```viml
+let g:airline_theme='oceanicnext'
 ```
 
 There is a light mode, but it still needs some work.
@@ -67,11 +66,11 @@ If anyone would like to contribute, I'd be happy to accept a Pull Request.
 
 If your terminal and setup supports it, you can enable italics and bold fonts with the following setting
 
-```viml
-  syntax on
-  let g:oceanic_next_terminal_bold = 1
-  let g:oceanic_next_terminal_italic = 1
-  colorscheme OceanicNext
+ ```viml
+syntax on
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme OceanicNext
 ```
 
 If your terminal has transparancy, you can enable it in neovim by adding the
@@ -99,4 +98,3 @@ _neovim_
 ![](https://raw.githubusercontent.com/mhartington/oceanic-next/master/oceanic-next-dark.nvim.png)
 
 Shown here with [vim-devicons](https://github.com/ryanoasis/vim-devicons)
-

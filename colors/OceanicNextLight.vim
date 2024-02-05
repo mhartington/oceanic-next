@@ -9,6 +9,7 @@
     syntax reset
   endif
   let g:colors_name="OceanicNextLight"
+  set background=light
 
 " Colors {{{
   let s:base00 = ['#f5f7fa', '253']
@@ -30,25 +31,31 @@
   let s:white  = ['#ffffff',  '15']
   let s:none   = ['NONE',    'NONE']
 " }}}
+"
+if has('nvim')
+lua << EOF
+  require('oceanic-next').load('light')
+EOF
+  else 
+    call oceanic_next#highlight(
+      \ s:base00,
+      \ s:base01,
+      \ s:base02,
+      \ s:base03,
+      \ s:base04,
+      \ s:base05,
+      \ s:base06,
+      \ s:base07,
+      \ s:red,
+      \ s:orange,
+      \ s:yellow,
+      \ s:green,
+      \ s:cyan,
+      \ s:blue,
+      \ s:purple,
+      \ s:brown,
+      \ s:white,
+      \ s:none
+      \)
+endif
 
-call oceanic_next#highlight(
-  \ s:base00,
-  \ s:base01,
-  \ s:base02,
-  \ s:base03,
-  \ s:base04,
-  \ s:base05,
-  \ s:base06,
-  \ s:base07,
-  \ s:red,
-  \ s:orange,
-  \ s:yellow,
-  \ s:green,
-  \ s:cyan,
-  \ s:blue,
-  \ s:purple,
-  \ s:brown,
-  \ s:white,
-  \ s:none
-  \)
-  set background=light

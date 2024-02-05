@@ -1,6 +1,0 @@
-# Neomake highlighting
-NeomakeErrorSign:           'base08 base01 .'
-NeomakeWarningSign:         'base0A base01 .'
-NeomakeInfoSign:            'base10 base01 .'
-NeomakeError:               'base08 . c'
-NeomakeWarning:             'base08 . c'

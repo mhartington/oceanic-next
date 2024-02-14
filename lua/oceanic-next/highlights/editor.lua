@@ -1,7 +1,7 @@
-local vim = {}
-local c = require("oceanic-next.config").colors
+local editor = {}
 
-function vim.highlights()
+function editor.highlights()
+	local c = require("oceanic-next.config").colors
 	return {
 		Bold = { bold = true },
 		Debug = { fg = c.red },
@@ -94,6 +94,16 @@ function vim.highlights()
 		IndentBlanklineSpaceCharBlankline = { fg = c.base01, nocombine = true },
 		IblIndent = { fg = c.base01, nocombine = true },
 		IblWhitespace = { fg = c.base01, nocombine = true },
+
+		DiffAdd = { fg = c.green, bg = c.base00 },
+		DiffChange = { fg = c.yellow, bg = c.base00 },
+		DiffDelete = { fg = c.red, bg = c.base00 },
+		DiffText = { fg = c.blue, bg = c.base00 },
+		DiffAdded = { fg = c.green, bg = c.base00 },
+		DiffFile = { fg = c.red, bg = c.base00 },
+		DiffNewFile = { fg = c.green, bg = c.base00 },
+		DiffLine = { fg = c.blue, bg = c.base00 },
+		DiffRemoved = { fg = c.red, bg = c.base00 },
 	}
 end
-return vim
+return editor

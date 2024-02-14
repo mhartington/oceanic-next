@@ -10,16 +10,16 @@ palette.dark = function()
 		base05 = "#c0c5ce",
 		base06 = "#cdd3de",
 		base07 = "#d8dee9",
-		red = "#ec5f67",
-		orange = "#f99157",
-		yellow = "#fac863",
-		green = "#99c794",
-		cyan = "#62b3b2",
-		blue = "#6699cc",
-		purple = "#c594c5",
-		brown = "#ab7967",
-		white = "#ffffff",
-		none = "NONE",
+		red    = "#ec5f67", -- base08
+		orange = "#f99157", -- base09
+		yellow = "#fac863", -- base0A
+		green  = "#99c794", -- base0B
+		cyan   = "#62b3b2", -- base0C
+		blue   = "#6699cc", -- base0D
+		purple = "#c594c5", -- base0E
+		brown  = "#ab7967", -- base0F
+		white  = "#ffffff", -- base0
+		none   = "NONE",
 	}
 end
 
@@ -33,16 +33,16 @@ palette.light = function()
 		base05 = "#4f5b66",
 		base06 = "#343d46",
 		base07 = "#1b2b34",
-		red = "#d0545b",
+		red    = "#d0545b",
 		orange = "#db804d",
 		yellow = "#dcb057",
-		green = "#87af82",
-		cyan = "#569e9d",
-		blue = "#5a87b4",
+		green  = "#87af82",
+		cyan   = "#569e9d",
+		blue   = "#5a87b4",
 		purple = "#ad82ad",
-		brown = "#966a5b",
-		white = "#ffffff",
-		none = "NONE",
+		brown  = "#966a5b",
+		white  = "#ffffff",
+		none   = "NONE",
 	}
 end
 

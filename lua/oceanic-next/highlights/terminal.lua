@@ -1,7 +1,7 @@
 local terminal = {}
-local c = require("oceanic-next.config").colors
 
 function terminal.highlights()
+  local c = require("oceanic-next.config").colors
 	vim.g.terminal_color_0 = c.base00
 	vim.g.terminal_color_8 = c.base03
 

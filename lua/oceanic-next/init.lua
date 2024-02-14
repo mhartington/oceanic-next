@@ -4,14 +4,9 @@ local palette = require("oceanic-next.palette")
 local M = {}
 
 M.load = function(background)
-	if background == "dark" then
-		config.colors = palette.dark()
-	elseif background == "light" then
-		config.colors = palette.light()
-	end
-
+  config.setup({colors = palette[background]()})
 	utils.load(
-		require("oceanic-next.highlights.vim").highlights(),
+		require("oceanic-next.highlights.editor").highlights(),
 		require("oceanic-next.highlights.treesitter").highlights(),
 		require("oceanic-next.highlights.lsp").highlights(),
 		require("oceanic-next.highlights.git").highlights()

@@ -1,13 +1,12 @@
 local M = {}
 
-local defaults = { color = nil }
-
-M.options = {}
+local defaults = { colors = {} }
 
 function M.setup(options)
-	M.options = vim.tbl_deep_extend("force", {}, defaults, options or {})
+	options = vim.tbl_deep_extend("force", {}, defaults, options or {})
+	for k, v in pairs(options) do
+		M[k] = v
+	end
 end
-
-M.setup()
 
 return M

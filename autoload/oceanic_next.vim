@@ -73,6 +73,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('CursorLine',                        '',       a:base01, 'None',      '')
   call s:hi('CursorLineNR',                      a:base00, a:base00, '',          '')
   call s:hi('CursorLineNr',                      a:base03, a:base01, '',          '')
+  call s:hi('NormalFloat',                       a:base04, a:base01, '',          '')
   call s:hi('PMenu',                             a:base04, a:base01, '',          '')
   call s:hi('PMenuSel',                          a:base07, a:blue,   '',          '')
   call s:hi('PmenuSbar',                         '',       a:base02, '',          '')

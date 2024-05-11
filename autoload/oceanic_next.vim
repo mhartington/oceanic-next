@@ -13,6 +13,20 @@ if g:oceanic_next_terminal_bold == 1
  let s:bold = "bold"
 endif
 
+let g:oceanic_next_ts_parameter = get(g:, 'oceanic_next_ts_parameter', 0)
+if !empty(g:oceanic_next_ts_parameter)
+    let s:ts_parameter = g:oceanic_next_ts_parameter
+else
+    let s:ts_parameter = ""
+endif
+
+let g:oceanic_next_ts_keyword = get(g:, 'oceanic_next_ts_keyword', 0)
+if !empty(g:oceanic_next_ts_keyword)
+    let s:ts_keyword = g:oceanic_next_ts_keyword
+else
+    let s:ts_keyword = ""
+endif
+
 function! s:hi(group, fg, bg, attr, attrsp)
   " fg, bg, attr, attrsp
   if !empty(a:fg)
@@ -88,7 +102,8 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('Character',                         a:red,    '',       '',          '')
   call s:hi('Comment',                           a:base03, '',       s:italic,    '')
   call s:hi('Conditional',                       a:purple, '',       '',          '')
-  call s:hi('Constant',                          a:orange, '',       '',          '')
+  call s:hi('Constant',                          a:green, '',       '',          '')
+  " call s:hi('Constant',                          a:orange, '',       '',          '')
   call s:hi('Define',                            a:purple, '',       '',          '')
   call s:hi('Delimiter',                         a:brown,  '',       '',          '')
   call s:hi('Float',                             a:orange, '',       '',          '')
@@ -100,7 +115,8 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
 
   call s:hi('Label',                             a:yellow, '',       '',          '')
   call s:hi('Number',                            a:orange, '',       '',          '')
-  call s:hi('Operator',                          a:orange, '',       '',          '')
+  call s:hi('Operator',                          a:purple, '',       '',          '')
+  " call s:hi('Operator',                          a:orange, '',       '',          '')
   call s:hi('PreProc',                           a:yellow, '',       '',          '')
   call s:hi('Repeat',                            a:yellow, '',       '',          '')
   call s:hi('Special',                           a:cyan,   '',       '',          '')
@@ -282,18 +298,24 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
     call s:hi('@punctuation.delimiter',            a:cyan,   '',       '',          '')
     call s:hi('@punctuation.special',              a:cyan,   '',       '',          '')
     call s:hi('@parameter',                        a:base07, '',       '',          '')
-    call s:hi('@type',                             a:yellow, '',       '',          '')
+    " call s:hi('@type',                             a:yellow, '',       '',          '')
+    call s:hi('@type',                             a:cyan, '',       '',          '')
+    call s:hi('@type.c',                             a:cyan, '',       '',          '')
     call s:hi('@function',                         a:blue,   '',       '',          '')
 
     call s:hi('@tag.delimiter',                    a:cyan,   '',       '',          '')
-    call s:hi('@property',                         a:base07, '',       '',          '')
+    call s:hi('@property',                         a:base04, '',       'italic',          '')
     call s:hi('@method',                           a:blue,   '',       '',          '')
-    call s:hi('@parameter',                        a:yellow, '',       '',          '')
+    call s:hi('@parameter',                        a:green, '',       '',          '')
+    call s:hi('@variable.parameter',               a:green, '',        s:ts_parameter,          '')
     call s:hi('@constructor',                      a:base07, '',       '',          '')
-    call s:hi('@variable',                         a:base06, '',       '',          '')
-    call s:hi('@operator',                         a:orange, '',       '',          '')
+    call s:hi('@variable',                         a:base05, '',       'bold',          '')
+    " call s:hi('@variable',                         a:base06, '',       'bold',          '')
+    call s:hi('@operator',                         a:purple, '',       '',          '')
+    " call s:hi('@operator',                         a:orange, '',       '',          '')
     call s:hi('@tag',                              a:base07, '',       '',          '')
-    call s:hi('@keyword',                          a:purple, '',       '',          '')
+    call s:hi('@keyword',                          a:purple, '',       s:ts_keyword,          '')
+    call s:hi('@keyword.return',                   a:red, '',       s:ts_keyword,          '')
     call s:hi('@keyword.operator',                 a:purple, '',       '',          '')
     call s:hi('@variable.builtin',                 a:red,    '',       '',          '')
     call s:hi('@label',                            a:cyan,   '',       '',          '')

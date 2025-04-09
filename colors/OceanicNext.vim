@@ -11,7 +11,6 @@
      endif
   endif
   let g:colors_name="OceanicNext"
-  set background=dark
 
 " Colors {{{
   let s:base00 = ['#1b2b34', '235']

@@ -9,7 +9,6 @@
     syntax reset
   endif
   let g:colors_name="OceanicNextLight"
-  set background=light
 
 " Colors {{{
   let s:base00 = ['#f5f7fa', '253']

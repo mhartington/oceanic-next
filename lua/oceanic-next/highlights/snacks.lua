@@ -17,7 +17,6 @@ function snacks.highlights()
     SnacksPickerInputBorder = {bg=lighten(c.base00, 5), fg=lighten(c.base00, 5)},
 
     SnacksPickerPreview = {bg=darken(c.base00, 2)},
-    -- SnacksPickerInputTitle = {},
     SnacksPickerPreviewBorder = {bg=darken(c.base00, 2), fg=darken(c.base00, 2)},
   }
 end

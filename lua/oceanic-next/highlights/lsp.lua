@@ -39,6 +39,8 @@ function lsp.highlights()
     ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
     ["@lsp.typemod.variable.injected"] = { link = "@variable" },
 
+    ["@lsp.type.operator.lua"] = {link="@punctuation.bracket"},
+
     -- Standard lsp diagnostics
     DiagnosticError = {},
     DiagnosticSignError = { fg = c.red },
